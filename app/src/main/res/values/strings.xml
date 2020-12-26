@@ -83,7 +83,7 @@
     </string-array>
     <string-array name="sandwitch_prices">
         <item>300 Rs</item>
-        <item>4000 Rs</item>
+        <item>400 Rs</item>
         <item>500 Rs</item>
     </string-array>
 </resources>
