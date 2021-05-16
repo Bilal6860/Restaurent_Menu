@@ -1,0 +1,1743 @@
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\r\n    <string name=\"app_name\">Restaurent Menu</string>\r\n    <string name=\"start\">start</string>\r\n    <string name=\"pause\">pause</string>\r\n    <string name=\"reset\">reset</string>\r\n    <string name=\"exit\">exit</string>\r\n    <string name=\"about_us\">about us</string>\r\n    <string-array name=\"resturent_menu\">\r\n        <item>Burgers</item>\r\n        <item>Chicken</item>\r\n        <item>Desserts</item>\r\n        <item>Drinks</item>\r\n        <item>Sandwiches &amp; Wraps</item>\r\n    </string-array>\r\n    <string-array name=\"burgers_menu\">\r\n        <item>Crunchos</item>\r\n        <item>Doppler</item>\r\n        <item>Jalapeno Crunch</item>\r\n        <item>Mushroom Melt</item>\r\n        <item>Pizza Burger</item>\r\n        <item>Triple Cheese</item>\r\n    </string-array>\r\n    <string-array name=\"burgers_prices\">\r\n        <item>300 Rs</item>\r\n        <item>340 Rs</item>\r\n        <item>280 Rs</item>\r\n        <item>200 Rs</item>\r\n        <item>250 Rs</item>\r\n        <item>370 Rs</item>\r\n    </string-array>\r\n    <string-array name=\"chicken_menu\">\r\n        <item>Hot wings</item>\r\n        <item>Roasted chicken</item>\r\n        <item>Grilled steak</item>\r\n        <item>chicken Tikka </item>\r\n    </string-array>\r\n\r\n    <string-array name=\"chicken_prices\">\r\n        <item>600 Rs</item>\r\n        <item>1000 Rs</item>\r\n        <item>450 Rs</item>\r\n        <item>900 Rs</item>\r\n    </string-array>\r\n    <string-array name=\"dessert_menu\">\r\n        <item>Banofie Pie</item>\r\n        <item>Chocolate Brownie</item>\r\n        <item>Nutella Cheese Cake</item>\r\n        <item>Redvelvet Cupcake</item>\r\n        <item>Strawberry Millefeuillie</item>\r\n    </string-array>\r\n\r\n    <string-array name=\"dessert_prices\">\r\n        <item>800 Rs</item>\r\n        <item>7000 Rs</item>\r\n        <item>550 Rs</item>\r\n        <item>400 Rs</item>\r\n        <item>600 Rs</item>\r\n    </string-array>\r\n    <string-array name=\"drinks_menu\">\r\n        <item>Black coffee</item>\r\n        <item>Cappuccino</item>\r\n        <item>Cold coffee</item>\r\n        <item>Hot chocolate</item>\r\n        <item>CocaCola</item>\r\n        <item>Fanta orange</item>\r\n        <item>Sprite</item>\r\n        <item>tea</item>\r\n    </string-array>\r\n    <string-array name=\"drinks_prices\">\r\n        <item>100 Rs</item>\r\n        <item>120 Rs</item>\r\n        <item>140 Rs</item>\r\n        <item>200 Rs</item>\r\n        <item>90 Rs</item>\r\n        <item>90 Rs</item>\r\n        <item>90 Rs</item>\r\n        <item>80 Rs</item>\r\n    </string-array>\r\n    <string-array name=\"sandwitch_menu\">\r\n        <item>BBQ chicken ranch wrap</item>\r\n        <item>Classic Club sandwich</item>\r\n        <item>Grilled chicken sandwich</item>\r\n    </string-array>\r\n    <string-array name=\"sandwitch_prices\">\r\n        <item>300 Rs</item>\r\n        <item>4000 Rs</item>\r\n        <item>500 Rs</item>\r\n    </string-array>\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/strings.xml	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ app/src/main/res/values/strings.xml	(date 1621155644582)
+@@ -1,62 +1,87 @@
+ <resources>
+     <string name="app_name">Restaurent Menu</string>
+-    <string name="start">start</string>
+-    <string name="pause">pause</string>
+-    <string name="reset">reset</string>
+-    <string name="exit">exit</string>
+-    <string name="about_us">about us</string>
++
+     <string-array name="resturent_menu">
+         <item>Burgers</item>
+-        <item>Chicken</item>
++        <item>Pizza</item>
+         <item>Desserts</item>
+         <item>Drinks</item>
+         <item>Sandwiches &amp; Wraps</item>
+     </string-array>
++
+     <string-array name="burgers_menu">
+         <item>Crunchos</item>
+         <item>Doppler</item>
+         <item>Jalapeno Crunch</item>
+         <item>Mushroom Melt</item>
+-        <item>Pizza Burger</item>
++        <item>Classic Zinger</item>
+         <item>Triple Cheese</item>
+     </string-array>
++
+     <string-array name="burgers_prices">
+-        <item>300 Rs</item>
+-        <item>340 Rs</item>
+-        <item>280 Rs</item>
+-        <item>200 Rs</item>
+-        <item>250 Rs</item>
+-        <item>370 Rs</item>
++        <item>350Rs</item>
++        <item>400Rs</item>
++        <item>300Rs</item>
++        <item>340Rs</item>
++        <item>300Rs</item>
++        <item>380Rs</item>
+     </string-array>
+-    <string-array name="chicken_menu">
+-        <item>Hot wings</item>
+-        <item>Roasted chicken</item>
+-        <item>Grilled steak</item>
+-        <item>chicken Tikka </item>
++
++    <string-array name="pizza_menu">
++        <item>Chicken Tikka</item>
++        <item>Chicken Tandoori</item>
++        <item>Chicken Golden Delight</item>
++        <item>chicken Fajita</item>
++        <item>Pepperoni</item>
++        <item>Mozzarella Cheese</item>
+     </string-array>
+ 
+-    <string-array name="chicken_prices">
+-        <item>600 Rs</item>
+-        <item>1000 Rs</item>
+-        <item>450 Rs</item>
+-        <item>900 Rs</item>
++    <string-array name="pizza_prices">
++        <item>S= 600Rs\nM= 900Rs\nL= 1200Rs</item>
++        <item>S= 700Rs\nM= 1000Rs\nL= 1300Rs</item>
++        <item>S=650Rs\nM=800Rs\nL=1100Rs</item>
++        <item>S=600Rs\nM=900Rs\nL=1200Rs</item>
++        <item>S= 600Rs\nM= 800Rs\nL= 1050Rs</item>
++        <item>S=700Rs\nM=900Rs\nL=1200Rs</item>
+     </string-array>
++
+     <string-array name="dessert_menu">
+-        <item>Banofie Pie</item>
++        <item>Banoffee Pie</item>
++        <item>Chocolate Pie</item>
++        <item>Apple Pie</item>
+         <item>Chocolate Brownie</item>
+-        <item>Nutella Cheese Cake</item>
+         <item>Redvelvet Cupcake</item>
+-        <item>Strawberry Millefeuillie</item>
++        <item>Chocolate Cupcake</item>
++        <item>Vanilla Cupcake</item>
++        <item>Special Birthday Cake</item>
++        <item>Special Birthday Cake</item>
++        <item>Chocolate Ice cream</item>
++        <item>Oreo Ice cream</item>
++        <item>Mango Ice cream</item>
+     </string-array>
+ 
+     <string-array name="dessert_prices">
+-        <item>800 Rs</item>
+-        <item>7000 Rs</item>
+-        <item>550 Rs</item>
++        <item>700Rs</item>
++        <item>750Rs</item>
++        <item>700Rs</item>
++        <item>110Rs/piece</item>
++        <item>400 Rs</item>
++        <item>400 Rs</item>
+         <item>400 Rs</item>
+-        <item>600 Rs</item>
++        <item>1lb= 850Rs\n2lb= 1600Rs\</item>
++        <item>1lb= 900Rs\n2lb= 1700Rs\</item>
++        <item>300 Rs</item>
++        <item>300 Rs</item>
++        <item>300 Rs</item>
+     </string-array>
++
+     <string-array name="drinks_menu">
++        <item>Strawberry Oreo</item>
++        <item>Salted Caramel</item>
++        <item>Fresh Carrot Orange</item>
++        <item>Fresh pineapple</item>
++        <item>Fresh Cucumber</item>
++        <item>Fresh Mango Lemonade</item>
+         <item>Black coffee</item>
+         <item>Cappuccino</item>
+         <item>Cold coffee</item>
+@@ -67,23 +92,35 @@
+         <item>tea</item>
+     </string-array>
+     <string-array name="drinks_prices">
+-        <item>100 Rs</item>
+-        <item>120 Rs</item>
+-        <item>140 Rs</item>
+-        <item>200 Rs</item>
+-        <item>90 Rs</item>
+-        <item>90 Rs</item>
+-        <item>90 Rs</item>
+-        <item>80 Rs</item>
++        <item>280Rs</item>
++        <item>280Rs</item>
++        <item>250Rs</item>
++        <item>250Rs</item>
++        <item>250Rs</item>
++        <item>250Rs</item>
++        <item>100Rs</item>
++        <item>120Rs</item>
++        <item>140Rs</item>
++        <item>200Rs</item>
++        <item>90Rs</item>
++        <item>90Rs</item>
++        <item>90Rs</item>
++        <item>80Rs</item>
+     </string-array>
+     <string-array name="sandwitch_menu">
++        <item>Mutton Kathi Roll</item>
++        <item>Paneer Tikka Kathi Roll</item>
+         <item>BBQ chicken ranch wrap</item>
++        <item>Grilled Steak sandwich</item>
+         <item>Classic Club sandwich</item>
+         <item>Grilled chicken sandwich</item>
+     </string-array>
+     <string-array name="sandwitch_prices">
+-        <item>300 Rs</item>
+-        <item>4000 Rs</item>
+-        <item>500 Rs</item>
++        <item>300Rs</item>
++        <item>300Rs</item>
++        <item>270Rs</item>
++        <item>550Rs</item>
++        <item>400Rs</item>
++        <item>500Rs</item>
+     </string-array>
+ </resources>
+\ No newline at end of file
+Index: app/src/main/res/layout/chicken_menu.xml
+===================================================================
+--- app/src/main/res/layout/chicken_menu.xml	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ app/src/main/res/layout/chicken_menu.xml	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
+@@ -1,67 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:app="http://schemas.android.com/apk/res-auto"
+-    android:layout_width="match_parent"
+-    android:layout_height="wrap_content">
+-
+-    <TextView
+-        android:id="@+id/tvchickenNam"
+-        android:layout_width="0dp"
+-        android:layout_height="wrap_content"
+-        android:layout_marginStart="16dp"
+-        android:layout_marginLeft="16dp"
+-        android:layout_marginTop="16dp"
+-        android:layout_marginEnd="8dp"
+-        android:layout_marginRight="8dp"
+-        android:text="TextView"
+-        android:textColor="@color/colorPrimaryDark"
+-        android:textSize="25sp"
+-        android:textStyle="bold"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toEndOf="@+id/imgviewAllchicken"
+-        app:layout_constraintTop_toTopOf="parent" />
+-
+-    <View
+-        android:id="@+id/view"
+-        android:layout_width="wrap_content"
+-        android:layout_height="2dp"
+-        android:layout_marginStart="16dp"
+-        android:layout_marginLeft="16dp"
+-        android:layout_marginTop="8dp"
+-        android:layout_marginEnd="16dp"
+-        android:layout_marginRight="16dp"
+-        android:background="@color/colorPrimaryDark"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toBottomOf="@+id/imgviewAllchicken" />
+-
+-    <ImageView
+-        android:id="@+id/imgviewAllchicken"
+-        android:layout_width="120dp"
+-        android:layout_height="120dp"
+-        android:layout_marginStart="16dp"
+-        android:layout_marginLeft="16dp"
+-        android:layout_marginTop="8dp"
+-        android:src="@mipmap/ic_launcher"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toTopOf="parent" />
+-
+-    <TextView
+-        android:id="@+id/tvchickenprice"
+-        android:layout_width="0dp"
+-        android:layout_height="wrap_content"
+-        android:layout_marginStart="32dp"
+-        android:layout_marginLeft="32dp"
+-        android:layout_marginTop="40dp"
+-        android:layout_marginEnd="32dp"
+-        android:layout_marginRight="32dp"
+-        android:layout_marginBottom="8dp"
+-        android:text="TextView"
+-        android:textColor="#F32121"
+-        android:textSize="20sp"
+-        android:textStyle="bold"
+-        app:layout_constraintBottom_toTopOf="@+id/view"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toEndOf="@+id/imgviewAllchicken"
+-        app:layout_constraintTop_toBottomOf="@+id/tvchickenNam" />
+-</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/example/mywork2nd/chickenMenu_class.java
+===================================================================
+--- app/src/main/java/com/example/mywork2nd/chickenMenu_class.java	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ app/src/main/java/com/example/mywork2nd/chickenMenu_class.java	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
+@@ -1,58 +0,0 @@
+-package com.example.mywork2nd;
+-
+-import android.content.Context;
+-import android.view.LayoutInflater;
+-import android.view.View;
+-import android.view.ViewGroup;
+-import android.widget.ImageView;
+-import android.widget.TextView;
+-
+-import androidx.annotation.NonNull;
+-import androidx.recyclerview.widget.RecyclerView;
+-
+-public class chickenMenu_class extends RecyclerView.Adapter<chickenMenu_class.ViewHolder> {
+-    String[] all_chickenNam;
+-    String[] all_chicenPrice;
+-    int[] all_chickenImg;
+-    Context c;
+-
+-    public chickenMenu_class(Context context, String[] all_chicke, int[] chickenimg,String[]chickenPrices) {
+-        c = context;
+-        all_chickenNam = all_chicke;
+-        all_chickenImg = chickenimg;
+-        all_chicenPrice=chickenPrices;
+-    }
+-
+-    @NonNull
+-    @Override
+-    public chickenMenu_class.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+-        LayoutInflater inflater = LayoutInflater.from(c);
+-        View view = inflater.inflate(R.layout.chicken_menu, parent, false);
+-        return new ViewHolder(view);
+-    }
+-
+-    @Override
+-    public void onBindViewHolder(@NonNull chickenMenu_class.ViewHolder holder, int position) {
+-        holder.tvchickenmenu.setText(all_chickenNam[position]);
+-        holder.imageViewchicken.setImageResource(all_chickenImg[position]);
+-        holder.tvchickenprice.setText(all_chicenPrice[position]);
+-    }
+-
+-    @Override
+-    public int getItemCount() {
+-        return all_chickenNam.length;
+-    }
+-
+-    public static class ViewHolder extends RecyclerView.ViewHolder {
+-        TextView tvchickenmenu;
+-        TextView tvchickenprice;
+-        ImageView imageViewchicken;
+-
+-        public ViewHolder(@NonNull View itemView) {
+-            super(itemView);
+-            tvchickenmenu = itemView.findViewById(R.id.tvchickenNam);
+-            tvchickenprice = itemView.findViewById(R.id.tvchickenprice);
+-            imageViewchicken=itemView.findViewById(R.id.imgviewAllchicken);
+-        }
+-    }
+-}
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"NullableNotNullManager\">\r\n    <option name=\"myDefaultNullable\" value=\"org.jetbrains.annotations.Nullable\" />\r\n    <option name=\"myDefaultNotNull\" value=\"androidx.annotation.NonNull\" />\r\n    <option name=\"myNullables\">\r\n      <value>\r\n        <list size=\"12\">\r\n          <item index=\"0\" class=\"java.lang.String\" itemvalue=\"org.jetbrains.annotations.Nullable\" />\r\n          <item index=\"1\" class=\"java.lang.String\" itemvalue=\"javax.annotation.Nullable\" />\r\n          <item index=\"2\" class=\"java.lang.String\" itemvalue=\"javax.annotation.CheckForNull\" />\r\n          <item index=\"3\" class=\"java.lang.String\" itemvalue=\"edu.umd.cs.findbugs.annotations.Nullable\" />\r\n          <item index=\"4\" class=\"java.lang.String\" itemvalue=\"android.support.annotation.Nullable\" />\r\n          <item index=\"5\" class=\"java.lang.String\" itemvalue=\"androidx.annotation.Nullable\" />\r\n          <item index=\"6\" class=\"java.lang.String\" itemvalue=\"android.annotation.Nullable\" />\r\n          <item index=\"7\" class=\"java.lang.String\" itemvalue=\"androidx.annotation.RecentlyNullable\" />\r\n          <item index=\"8\" class=\"java.lang.String\" itemvalue=\"org.checkerframework.checker.nullness.qual.Nullable\" />\r\n          <item index=\"9\" class=\"java.lang.String\" itemvalue=\"org.checkerframework.checker.nullness.compatqual.NullableDecl\" />\r\n          <item index=\"10\" class=\"java.lang.String\" itemvalue=\"org.checkerframework.checker.nullness.compatqual.NullableType\" />\r\n          <item index=\"11\" class=\"java.lang.String\" itemvalue=\"com.android.annotations.Nullable\" />\r\n        </list>\r\n      </value>\r\n    </option>\r\n    <option name=\"myNotNulls\">\r\n      <value>\r\n        <list size=\"11\">\r\n          <item index=\"0\" class=\"java.lang.String\" itemvalue=\"org.jetbrains.annotations.NotNull\" />\r\n          <item index=\"1\" class=\"java.lang.String\" itemvalue=\"javax.annotation.Nonnull\" />\r\n          <item index=\"2\" class=\"java.lang.String\" itemvalue=\"edu.umd.cs.findbugs.annotations.NonNull\" />\r\n          <item index=\"3\" class=\"java.lang.String\" itemvalue=\"android.support.annotation.NonNull\" />\r\n          <item index=\"4\" class=\"java.lang.String\" itemvalue=\"androidx.annotation.NonNull\" />\r\n          <item index=\"5\" class=\"java.lang.String\" itemvalue=\"android.annotation.NonNull\" />\r\n          <item index=\"6\" class=\"java.lang.String\" itemvalue=\"androidx.annotation.RecentlyNonNull\" />\r\n          <item index=\"7\" class=\"java.lang.String\" itemvalue=\"org.checkerframework.checker.nullness.qual.NonNull\" />\r\n          <item index=\"8\" class=\"java.lang.String\" itemvalue=\"org.checkerframework.checker.nullness.compatqual.NonNullDecl\" />\r\n          <item index=\"9\" class=\"java.lang.String\" itemvalue=\"org.checkerframework.checker.nullness.compatqual.NonNullType\" />\r\n          <item index=\"10\" class=\"java.lang.String\" itemvalue=\"com.android.annotations.NonNull\" />\r\n        </list>\r\n      </value>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_1_7\" project-jdk-name=\"12\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ .idea/misc.xml	(date 1620497332874)
+@@ -5,7 +5,7 @@
+     <option name="myDefaultNotNull" value="androidx.annotation.NonNull" />
+     <option name="myNullables">
+       <value>
+-        <list size="12">
++        <list size="15">
+           <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
+           <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
+           <item index="2" class="java.lang.String" itemvalue="javax.annotation.CheckForNull" />
+@@ -18,12 +18,15 @@
+           <item index="9" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableDecl" />
+           <item index="10" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableType" />
+           <item index="11" class="java.lang.String" itemvalue="com.android.annotations.Nullable" />
++          <item index="12" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.Nullable" />
++          <item index="13" class="java.lang.String" itemvalue="io.reactivex.annotations.Nullable" />
++          <item index="14" class="java.lang.String" itemvalue="io.reactivex.rxjava3.annotations.Nullable" />
+         </list>
+       </value>
+     </option>
+     <option name="myNotNulls">
+       <value>
+-        <list size="11">
++        <list size="14">
+           <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />
+           <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />
+           <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />
+@@ -35,11 +38,14 @@
+           <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullDecl" />
+           <item index="9" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullType" />
+           <item index="10" class="java.lang.String" itemvalue="com.android.annotations.NonNull" />
++          <item index="11" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.NonNull" />
++          <item index="12" class="java.lang.String" itemvalue="io.reactivex.annotations.NonNull" />
++          <item index="13" class="java.lang.String" itemvalue="io.reactivex.rxjava3.annotations.NonNull" />
+         </list>
+       </value>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="12" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_12" default="true" project-jdk-name="12" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+Index: .idea/.name
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/.name	(date 1608808300903)
++++ .idea/.name	(date 1608808300903)
+@@ -0,0 +1,1 @@
++mywork2nd
+\ No newline at end of file
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// Top-level build file where you can add configuration options common to all sub-projects/modules.\r\nbuildscript {\r\n    repositories {\r\n        google()\r\n        jcenter()\r\n    }\r\n    dependencies {\r\n        classpath \"com.android.tools.build:gradle:4.0.2\"\r\n\r\n        // NOTE: Do not place your application dependencies here; they belong\r\n        // in the individual module build.gradle files\r\n    }\r\n}\r\n\r\nallprojects {\r\n    repositories {\r\n        google()\r\n        jcenter()\r\n    }\r\n}\r\n\r\ntask clean(type: Delete) {\r\n    delete rootProject.buildDir\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- build.gradle	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ build.gradle	(date 1620497373987)
+@@ -5,7 +5,7 @@
+         jcenter()
+     }
+     dependencies {
+-        classpath "com.android.tools.build:gradle:4.0.2"
++        classpath 'com.android.tools.build:gradle:4.1.3'
+ 
+         // NOTE: Do not place your application dependencies here; they belong
+         // in the individual module build.gradle files
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"testRunner\" value=\"PLATFORM\" />\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"gradleJvm\" value=\"1.8\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/gradle.xml	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ .idea/gradle.xml	(date 1620497332907)
+@@ -15,6 +15,7 @@
+           </set>
+         </option>
+         <option name="resolveModulePerSourceSet" value="false" />
++        <option name="useQualifiedModuleNames" value="true" />
+       </GradleProjectSettings>
+     </option>
+   </component>
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(date 1608807698361)
++++ .idea/vcs.xml	(date 1608807698361)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>apply plugin: 'com.android.application'\r\n\r\nandroid {\r\n    compileSdkVersion 30\r\n    buildToolsVersion \"30.0.2\"\r\n\r\n    defaultConfig {\r\n        applicationId \"com.example.mywork2nd\"\r\n        minSdkVersion 16\r\n        targetSdkVersion 30\r\n        versionCode 1\r\n        versionName \"1.0\"\r\n\r\n        testInstrumentationRunner \"androidx.test.runner.AndroidJUnitRunner\"\r\n    }\r\n\r\n    buildTypes {\r\n        release {\r\n            minifyEnabled false\r\n            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'\r\n        }\r\n    }\r\n}\r\n\r\ndependencies {\r\n    implementation fileTree(dir: \"libs\", include: [\"*.jar\"])\r\n    implementation 'androidx.appcompat:appcompat:1.2.0'\r\n    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'\r\n    implementation 'com.google.android.gms:play-services-ads:19.4.0'\r\n    implementation 'com.google.android.gms:play-services-maps:17.0.0'\r\n    implementation 'androidx.recyclerview:recyclerview:1.1.0'\r\n    implementation 'androidx.cardview:cardview:1.0.0'\r\n    testImplementation 'junit:junit:4.12'\r\n    androidTestImplementation 'androidx.test.ext:junit:1.1.2'\r\n    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build.gradle	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ app/build.gradle	(date 1620997246389)
+@@ -25,9 +25,9 @@
+ dependencies {
+     implementation fileTree(dir: "libs", include: ["*.jar"])
+     implementation 'androidx.appcompat:appcompat:1.2.0'
+-    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+-    implementation 'com.google.android.gms:play-services-ads:19.4.0'
+-    implementation 'com.google.android.gms:play-services-maps:17.0.0'
++    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
++    implementation 'com.google.android.gms:play-services-ads:20.1.0'
++    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+     implementation 'androidx.recyclerview:recyclerview:1.1.0'
+     implementation 'androidx.cardview:cardview:1.0.0'
+     testImplementation 'junit:junit:4.12'
+Index: app/src/main/res/layout/dessert_menu.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"wrap_content\">\r\n\r\n    <TextView\r\n        android:id=\"@+id/tvdessertNam\"\r\n        android:layout_width=\"0dp\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"16dp\"\r\n        android:layout_marginEnd=\"8dp\"\r\n        android:layout_marginRight=\"8dp\"\r\n        android:text=\"TextView\"\r\n        android:textColor=\"@color/colorPrimaryDark\"\r\n        android:textSize=\"25sp\"\r\n        android:textStyle=\"bold\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/imgviewAlldessert\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <View\r\n        android:id=\"@+id/view\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"2dp\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"8dp\"\r\n        android:layout_marginEnd=\"16dp\"\r\n        android:layout_marginRight=\"16dp\"\r\n        android:background=\"@color/colorPrimaryDark\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/imgviewAlldessert\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/imgviewAlldessert\"\r\n        android:layout_width=\"120dp\"\r\n        android:layout_height=\"120dp\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"8dp\"\r\n        android:src=\"@mipmap/ic_launcher\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/tvdessertprice\"\r\n        android:layout_width=\"0dp\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"32dp\"\r\n        android:layout_marginLeft=\"32dp\"\r\n        android:layout_marginTop=\"40dp\"\r\n        android:layout_marginEnd=\"32dp\"\r\n        android:layout_marginRight=\"32dp\"\r\n        android:layout_marginBottom=\"8dp\"\r\n        android:text=\"TextView\"\r\n        android:textColor=\"#F32121\"\r\n        android:textSize=\"20sp\"\r\n        android:textStyle=\"bold\"\r\n        app:layout_constraintBottom_toTopOf=\"@+id/view\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/imgviewAlldessert\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/tvdessertNam\" />\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/dessert_menu.xml	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ app/src/main/res/layout/dessert_menu.xml	(date 1620741404511)
+@@ -1,7 +1,11 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
++    android:background="#F3F8F7"
++    android:id="@+id/layoutdessert"
++    android:layout_margin="2dp"
+     android:layout_height="wrap_content">
+ 
+     <TextView
+@@ -10,58 +14,41 @@
+         android:layout_height="wrap_content"
+         android:layout_marginStart="16dp"
+         android:layout_marginLeft="16dp"
+-        android:layout_marginTop="16dp"
+-        android:layout_marginEnd="8dp"
+-        android:layout_marginRight="8dp"
++        android:layout_marginTop="8dp"
++        android:layout_marginEnd="16dp"
++        android:layout_marginRight="16dp"
++        android:layout_marginBottom="8dp"
+         android:text="TextView"
+         android:textColor="@color/colorPrimaryDark"
+         android:textSize="25sp"
+         android:textStyle="bold"
+-        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+         app:layout_constraintStart_toEndOf="@+id/imgviewAlldessert"
+         app:layout_constraintTop_toTopOf="parent" />
+ 
+-    <View
+-        android:id="@+id/view"
+-        android:layout_width="wrap_content"
+-        android:layout_height="2dp"
+-        android:layout_marginStart="16dp"
+-        android:layout_marginLeft="16dp"
+-        android:layout_marginTop="8dp"
+-        android:layout_marginEnd="16dp"
+-        android:layout_marginRight="16dp"
+-        android:background="@color/colorPrimaryDark"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toBottomOf="@+id/imgviewAlldessert" />
+-
+     <ImageView
+         android:id="@+id/imgviewAlldessert"
+         android:layout_width="120dp"
+         android:layout_height="120dp"
+-        android:layout_marginStart="16dp"
+-        android:layout_marginLeft="16dp"
+-        android:layout_marginTop="8dp"
++        android:scaleType="fitXY"
+         android:src="@mipmap/ic_launcher"
++        android:background="#F3F8F7"
++        app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+ 
+-    <TextView
+-        android:id="@+id/tvdessertprice"
+-        android:layout_width="0dp"
++    <ImageView
++        android:id="@+id/imageView4"
++        android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+-        android:layout_marginStart="32dp"
+-        android:layout_marginLeft="32dp"
+-        android:layout_marginTop="40dp"
+-        android:layout_marginEnd="32dp"
+-        android:layout_marginRight="32dp"
++        android:layout_marginTop="8dp"
++        android:layout_marginEnd="8dp"
++        android:layout_marginRight="8dp"
+         android:layout_marginBottom="8dp"
+-        android:text="TextView"
+-        android:textColor="#F32121"
+-        android:textSize="20sp"
+-        android:textStyle="bold"
+-        app:layout_constraintBottom_toTopOf="@+id/view"
++        app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toEndOf="@+id/imgviewAlldessert"
+-        app:layout_constraintTop_toBottomOf="@+id/tvdessertNam" />
++        app:layout_constraintTop_toTopOf="parent"
++        app:srcCompat="@drawable/ic_baseline_arrow_right" />
++
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/menu/main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<menu xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\">\r\n    <item\r\n        android:id=\"@+id/action_settings\"\r\n        android:orderInCategory=\"100\"\r\n        android:title=\"@string/about_us\"\r\n        app:showAsAction=\"never\" />\r\n    <item\r\n        android:id=\"@+id/about_us\"\r\n        android:orderInCategory=\"100\"\r\n        android:title=\"@string/about_us\"\r\n        app:showAsAction=\"always\" />\r\n</menu>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/menu/main.xml	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ app/src/main/res/menu/main.xml	(date 1621153324758)
+@@ -1,14 +1,5 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <menu xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto">
+-    <item
+-        android:id="@+id/action_settings"
+-        android:orderInCategory="100"
+-        android:title="@string/about_us"
+-        app:showAsAction="never" />
+-    <item
+-        android:id="@+id/about_us"
+-        android:orderInCategory="100"
+-        android:title="@string/about_us"
+-        app:showAsAction="always" />
++
+ </menu>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:orientation=\"vertical\"\r\n    tools:context=\".MainActivity\">\r\n    <androidx.recyclerview.widget.RecyclerView\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"match_parent\"\r\n        android:id=\"@+id/recycleview1\"/>\r\n\r\n</LinearLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_main.xml	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ app/src/main/res/layout/activity_main.xml	(date 1621012761732)
+@@ -2,8 +2,9 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+-    android:layout_height="match_parent"
++    android:layout_height="wrap_content"
+     android:orientation="vertical"
++    android:background="@color/colorPrimaryDark"
+     tools:context=".MainActivity">
+     <androidx.recyclerview.widget.RecyclerView
+         android:layout_width="match_parent"
+Index: app/src/main/res/layout/sandwrap_menu.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"wrap_content\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\">\r\n    <TextView\r\n        android:id=\"@+id/tvsandName\"\r\n        android:layout_width=\"0dp\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"16dp\"\r\n        android:layout_marginEnd=\"8dp\"\r\n        android:layout_marginRight=\"8dp\"\r\n        android:text=\"TextView\"\r\n        android:textColor=\"@color/colorPrimaryDark\"\r\n        android:textSize=\"25sp\"\r\n        android:textStyle=\"bold\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/imgviewAllsandwich\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <View\r\n        android:id=\"@+id/view\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"2dp\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"8dp\"\r\n        android:layout_marginEnd=\"16dp\"\r\n        android:layout_marginRight=\"16dp\"\r\n        android:background=\"@color/colorPrimaryDark\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/imgviewAllsandwich\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/imgviewAllsandwich\"\r\n        android:layout_width=\"120dp\"\r\n        android:layout_height=\"120dp\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"8dp\"\r\n        android:src=\"@mipmap/ic_launcher\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/tvsandwichiprice\"\r\n        android:layout_width=\"0dp\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"32dp\"\r\n        android:layout_marginLeft=\"32dp\"\r\n        android:layout_marginTop=\"40dp\"\r\n        android:layout_marginEnd=\"32dp\"\r\n        android:layout_marginRight=\"32dp\"\r\n        android:layout_marginBottom=\"8dp\"\r\n        android:text=\"TextView\"\r\n        android:textColor=\"#F32121\"\r\n        android:textSize=\"20sp\"\r\n        android:textStyle=\"bold\"\r\n        app:layout_constraintBottom_toTopOf=\"@+id/view\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/imgviewAllsandwich\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/tvsandName\" />\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/sandwrap_menu.xml	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ app/src/main/res/layout/sandwrap_menu.xml	(date 1620741404477)
+@@ -1,66 +1,54 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
++    android:layout_margin="2dp"
++    android:id="@+id/layoutsand_wraps"
++    android:background="#F3F8F7"
+     xmlns:app="http://schemas.android.com/apk/res-auto">
++
+     <TextView
+         android:id="@+id/tvsandName"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="16dp"
+         android:layout_marginLeft="16dp"
+-        android:layout_marginTop="16dp"
+-        android:layout_marginEnd="8dp"
+-        android:layout_marginRight="8dp"
++        android:layout_marginTop="8dp"
++        android:layout_marginEnd="16dp"
++        android:layout_marginRight="16dp"
++        android:layout_marginBottom="8dp"
+         android:text="TextView"
+         android:textColor="@color/colorPrimaryDark"
+         android:textSize="25sp"
+         android:textStyle="bold"
+-        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+         app:layout_constraintStart_toEndOf="@+id/imgviewAllsandwich"
+         app:layout_constraintTop_toTopOf="parent" />
+ 
+-    <View
+-        android:id="@+id/view"
+-        android:layout_width="wrap_content"
+-        android:layout_height="2dp"
+-        android:layout_marginStart="16dp"
+-        android:layout_marginLeft="16dp"
+-        android:layout_marginTop="8dp"
+-        android:layout_marginEnd="16dp"
+-        android:layout_marginRight="16dp"
+-        android:background="@color/colorPrimaryDark"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toBottomOf="@+id/imgviewAllsandwich" />
+-
+     <ImageView
+         android:id="@+id/imgviewAllsandwich"
+         android:layout_width="120dp"
+         android:layout_height="120dp"
+-        android:layout_marginStart="16dp"
+-        android:layout_marginLeft="16dp"
+-        android:layout_marginTop="8dp"
+         android:src="@mipmap/ic_launcher"
++        android:scaleType="fitXY"
++        android:background="#F3F8F7"
++        app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+ 
+-    <TextView
+-        android:id="@+id/tvsandwichiprice"
+-        android:layout_width="0dp"
++    <ImageView
++        android:id="@+id/imageView6"
++        android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+-        android:layout_marginStart="32dp"
+-        android:layout_marginLeft="32dp"
+-        android:layout_marginTop="40dp"
+-        android:layout_marginEnd="32dp"
+-        android:layout_marginRight="32dp"
++        android:layout_marginTop="8dp"
++        android:layout_marginEnd="8dp"
++        android:layout_marginRight="8dp"
+         android:layout_marginBottom="8dp"
+-        android:text="TextView"
+-        android:textColor="#F32121"
+-        android:textSize="20sp"
+-        android:textStyle="bold"
+-        app:layout_constraintBottom_toTopOf="@+id/view"
++        app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toEndOf="@+id/imgviewAllsandwich"
+-        app:layout_constraintTop_toBottomOf="@+id/tvsandName" />
++        app:layout_constraintTop_toTopOf="parent"
++        app:srcCompat="@drawable/ic_baseline_arrow_right" />
++
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_item__detail.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".Item_Detail_activity\">\r\n<androidx.recyclerview.widget.RecyclerView\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:id=\"@+id/recycler_forAll\">\r\n</androidx.recyclerview.widget.RecyclerView>\r\n\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_item__detail.xml	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ app/src/main/res/layout/activity_item__detail.xml	(date 1620738337090)
+@@ -1,9 +1,9 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
++    android:background="@color/colorPrimaryDark"
+     tools:context=".Item_Detail_activity">
+ <androidx.recyclerview.widget.RecyclerView
+     android:layout_width="match_parent"
+Index: app/src/main/java/com/example/mywork2nd/Item_Detail_activity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.mywork2nd;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\nimport androidx.recyclerview.widget.GridLayoutManager;\r\nimport androidx.recyclerview.widget.LinearLayoutManager;\r\nimport androidx.recyclerview.widget.RecyclerView;\r\n\r\nimport android.content.Intent;\r\nimport android.media.Image;\r\nimport android.os.Bundle;\r\nimport android.widget.ImageView;\r\nimport android.widget.RelativeLayout;\r\nimport android.widget.TextView;\r\nimport android.widget.Toast;\r\n\r\npublic class Item_Detail_activity extends AppCompatActivity {\r\n    String[] burgers_names, burger_price, chicken_nam, chicken_price,dessert_nam,\r\n    dessert_price,drink_nam,drink_price,sandwitchWrap_nam,SandwitchWrap_price;\r\n    RecyclerView recylerforAll;\r\n    int[] burger_imges = {\r\n\r\n            R.drawable.cruncho,\r\n            R.drawable.doppler,\r\n            R.drawable.jalapeno_crunch,\r\n            R.drawable.mushroom_melt,\r\n            R.drawable.pizza_burger,\r\n            R.drawable.tripple_cheese\r\n    };\r\n    int[] chicken_imges = {\r\n\r\n            R.drawable.hot_wings,\r\n            R.drawable.roasred_grilled,\r\n            R.drawable.steak,\r\n            R.drawable.tikka\r\n    };\r\n    int[] dessert_imges = {\r\n\r\n            R.drawable.banofie_pie,\r\n            R.drawable.choclate_brownies,\r\n            R.drawable.nutellacheesecake,\r\n            R.drawable.redvelvetcupcakes,\r\n            R.drawable.strawberrymillefeuillie\r\n    };\r\n    int[] drink_imges = {\r\n\r\n            R.drawable.black_coffee,\r\n            R.drawable.cappuccino,\r\n            R.drawable.cold_coffee,\r\n            R.drawable.cz_hot_chocolate,\r\n            R.drawable.d_cocacola,\r\n            R.drawable.fanta_orange,\r\n            R.drawable.sprite,\r\n            R.drawable.tea,\r\n\r\n    };\r\n    int[] sandwich_wrap_imges = {\r\n\r\n            R.drawable.bbq_ranch_wrap,\r\n            R.drawable.club_sandwich,\r\n            R.drawable.grilled_chicken_sandwich,\r\n    };\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_item__detail);\r\n        Intent intent = getIntent();\r\n        String item_name = intent.getStringExtra(\"message\");\r\n        int item_img = intent.getIntExtra(\"message2\", 1);\r\n        recylerforAll = findViewById(R.id.recycler_forAll);\r\n\r\n        if (item_name.equals(\"Burgers\")) {\r\n            burgers_names = getResources().getStringArray(R.array.burgers_menu);\r\n            burger_price = getResources().getStringArray(R.array.burgers_prices);\r\n            burgerMenu_class burgerMenu_classOBJ = new burgerMenu_class(this, burgers_names, burger_imges, burger_price);\r\n            recylerforAll.setAdapter(burgerMenu_classOBJ);\r\n            recylerforAll.setLayoutManager(new LinearLayoutManager(this));\r\n        }\r\n        if (item_name.equals(\"Chicken\")) {\r\n            chicken_nam = getResources().getStringArray(R.array.chicken_menu);\r\n            chicken_price = getResources().getStringArray(R.array.chicken_prices);\r\n            chickenMenu_class chickenMenu_classOBJ = new chickenMenu_class(this, chicken_nam, chicken_imges, chicken_price);\r\n            recylerforAll.setAdapter(chickenMenu_classOBJ);\r\n            recylerforAll.setLayoutManager(new LinearLayoutManager(this));\r\n        }\r\n        if (item_name.equals(\"Desserts\")) {\r\n            dessert_nam = getResources().getStringArray(R.array.dessert_menu);\r\n            dessert_price = getResources().getStringArray(R.array.dessert_prices);\r\n            dessertMenu_class dessertMenu_classOBJ = new dessertMenu_class(this, dessert_nam, dessert_imges, dessert_price);\r\n            recylerforAll.setAdapter(dessertMenu_classOBJ);\r\n            recylerforAll.setLayoutManager(new LinearLayoutManager(this));\r\n        }\r\n        if (item_name.equals(\"Drinks\")) {\r\n            drink_nam = getResources().getStringArray(R.array.drinks_menu);\r\n            drink_price = getResources().getStringArray(R.array.drinks_prices);\r\n            drink_menu_class drinkMenu_classOBJ = new drink_menu_class(this, drink_nam, drink_imges, drink_price);\r\n            recylerforAll.setAdapter(drinkMenu_classOBJ);\r\n            recylerforAll.setLayoutManager(new LinearLayoutManager(this));\r\n        }\r\n\r\n        if (item_name.equals(\"Sandwiches & Wraps\")) {\r\n            sandwitchWrap_nam = getResources().getStringArray(R.array.sandwitch_menu);\r\n            SandwitchWrap_price= getResources().getStringArray(R.array.sandwitch_prices);\r\n            sandWrapMenu_class sandwichMenu_classOBJ = new sandWrapMenu_class(this, sandwitchWrap_nam, sandwich_wrap_imges, SandwitchWrap_price);\r\n            recylerforAll.setAdapter(sandwichMenu_classOBJ);\r\n            recylerforAll.setLayoutManager(new LinearLayoutManager(this));\r\n        }\r\n\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/mywork2nd/Item_Detail_activity.java	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ app/src/main/java/com/example/mywork2nd/Item_Detail_activity.java	(date 1621104017064)
+@@ -1,21 +1,15 @@
+ package com.example.mywork2nd;
+ 
+ import androidx.appcompat.app.AppCompatActivity;
+-import androidx.recyclerview.widget.GridLayoutManager;
+ import androidx.recyclerview.widget.LinearLayoutManager;
+ import androidx.recyclerview.widget.RecyclerView;
+ 
+ import android.content.Intent;
+-import android.media.Image;
+ import android.os.Bundle;
+-import android.widget.ImageView;
+-import android.widget.RelativeLayout;
+-import android.widget.TextView;
+-import android.widget.Toast;
+ 
+ public class Item_Detail_activity extends AppCompatActivity {
+-    String[] burgers_names, burger_price, chicken_nam, chicken_price,dessert_nam,
+-    dessert_price,drink_nam,drink_price,sandwitchWrap_nam,SandwitchWrap_price;
++    String[] burgers_names, burger_price, pizza_nam, pizza_price, dessert_nam,
++            dessert_price, drink_nam, drink_price, sandwitchWrap_nam, SandwitchWrap_price;
+     RecyclerView recylerforAll;
+     int[] burger_imges = {
+ 
+@@ -23,26 +17,39 @@
+             R.drawable.doppler,
+             R.drawable.jalapeno_crunch,
+             R.drawable.mushroom_melt,
+-            R.drawable.pizza_burger,
++            R.drawable.zinger,
+             R.drawable.tripple_cheese
+     };
+-    int[] chicken_imges = {
++    int[] pizza_imges = {
+ 
+-            R.drawable.hot_wings,
+-            R.drawable.roasred_grilled,
+-            R.drawable.steak,
+-            R.drawable.tikka
++            R.drawable.chicken_tikka,
++            R.drawable.tandoori_chicken,
++            R.drawable.golden_delight,
++            R.drawable.chicken_fajita,
++            R.drawable.pepporoni,
++            R.drawable.mozzarella
+     };
+     int[] dessert_imges = {
+-
+             R.drawable.banofie_pie,
++            R.drawable.choclate_pie,
++            R.drawable.apple_pie,
+             R.drawable.choclate_brownies,
+-            R.drawable.nutellacheesecake,
+             R.drawable.redvelvetcupcakes,
+-            R.drawable.strawberrymillefeuillie
++            R.drawable.choc_cupcake,
++            R.drawable.vanila_cupcake,
++            R.drawable.bday_one,
++            R.drawable.bday_two,
++            R.drawable.choc_icecream,
++            R.drawable.oreo_icecream,
++            R.drawable.mango_icecream
+     };
+     int[] drink_imges = {
+-
++            R.drawable.stawberry_ore,
++            R.drawable.salted_caramel,
++            R.drawable.carrot_orange,
++            R.drawable.pineapple,
++            R.drawable.cucumber_juice,
++            R.drawable.mango_lemonade,
+             R.drawable.black_coffee,
+             R.drawable.cappuccino,
+             R.drawable.cold_coffee,
+@@ -54,8 +61,10 @@
+ 
+     };
+     int[] sandwich_wrap_imges = {
+-
++            R.drawable.mutto_roll,
++            R.drawable.paneer_roll,
+             R.drawable.bbq_ranch_wrap,
++            R.drawable.steak_sandwich,
+             R.drawable.club_sandwich,
+             R.drawable.grilled_chicken_sandwich,
+     };
+@@ -66,7 +75,7 @@
+         setContentView(R.layout.activity_item__detail);
+         Intent intent = getIntent();
+         String item_name = intent.getStringExtra("message");
+-        int item_img = intent.getIntExtra("message2", 1);
++        //  int item_img = intent.getIntExtra("message2", 1);
+         recylerforAll = findViewById(R.id.recycler_forAll);
+ 
+         if (item_name.equals("Burgers")) {
+@@ -76,11 +85,12 @@
+             recylerforAll.setAdapter(burgerMenu_classOBJ);
+             recylerforAll.setLayoutManager(new LinearLayoutManager(this));
+         }
+-        if (item_name.equals("Chicken")) {
+-            chicken_nam = getResources().getStringArray(R.array.chicken_menu);
+-            chicken_price = getResources().getStringArray(R.array.chicken_prices);
+-            chickenMenu_class chickenMenu_classOBJ = new chickenMenu_class(this, chicken_nam, chicken_imges, chicken_price);
+-            recylerforAll.setAdapter(chickenMenu_classOBJ);
++        if (item_name.equals("Pizza")) {
++            pizza_nam = getResources().getStringArray(R.array.pizza_menu);
++            pizza_price = getResources().getStringArray(R.array.pizza_prices);
++            pizzaMenu_class pizzaMenu_classOBJ = new pizzaMenu_class(
++                    this, pizza_nam, pizza_imges, pizza_price);
++            recylerforAll.setAdapter(pizzaMenu_classOBJ);
+             recylerforAll.setLayoutManager(new LinearLayoutManager(this));
+         }
+         if (item_name.equals("Desserts")) {
+@@ -100,7 +110,7 @@
+ 
+         if (item_name.equals("Sandwiches & Wraps")) {
+             sandwitchWrap_nam = getResources().getStringArray(R.array.sandwitch_menu);
+-            SandwitchWrap_price= getResources().getStringArray(R.array.sandwitch_prices);
++            SandwitchWrap_price = getResources().getStringArray(R.array.sandwitch_prices);
+             sandWrapMenu_class sandwichMenu_classOBJ = new sandWrapMenu_class(this, sandwitchWrap_nam, sandwich_wrap_imges, SandwitchWrap_price);
+             recylerforAll.setAdapter(sandwichMenu_classOBJ);
+             recylerforAll.setLayoutManager(new LinearLayoutManager(this));
+Index: app/src/main/res/layout/burger_menu.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"wrap_content\">\r\n    <TextView\r\n        android:id=\"@+id/tvburgerName\"\r\n        android:layout_width=\"0dp\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"24dp\"\r\n        android:layout_marginEnd=\"16dp\"\r\n        android:layout_marginRight=\"16dp\"\r\n        android:textColor=\"@color/colorPrimaryDark\"\r\n        android:text=\"TextView\"\r\n        android:textSize=\"25sp\"\r\n        android:textStyle=\"bold\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/imgviewAllBurgers\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <View\r\n        android:id=\"@+id/view\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"2dp\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"8dp\"\r\n        android:layout_marginEnd=\"16dp\"\r\n        android:layout_marginRight=\"16dp\"\r\n        android:background=\"@color/colorPrimaryDark\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/imgviewAllBurgers\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/imgviewAllBurgers\"\r\n        android:layout_width=\"120dp\"\r\n        android:layout_height=\"120dp\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:src=\"@mipmap/ic_launcher\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"8dp\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/tv_burgerPrice\"\r\n        android:layout_width=\"0dp\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"32dp\"\r\n        android:layout_marginLeft=\"32dp\"\r\n        android:layout_marginTop=\"40dp\"\r\n        android:layout_marginEnd=\"32dp\"\r\n        android:layout_marginRight=\"32dp\"\r\n        android:text=\"TextView\"\r\n        android:textSize=\"20sp\"\r\n        android:textStyle=\"bold\"\r\n        android:textColor=\"#F32121\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/imgviewAllBurgers\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/tvburgerName\" />\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/burger_menu.xml	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ app/src/main/res/layout/burger_menu.xml	(date 1620741245717)
+@@ -2,64 +2,55 @@
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
++    android:id="@+id/burgerlayout"
+     android:layout_width="match_parent"
++    android:layout_margin="2dp"
++    android:background="#F3F8F7"
+     android:layout_height="wrap_content">
++
+     <TextView
+         android:id="@+id/tvburgerName"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="16dp"
+         android:layout_marginLeft="16dp"
+-        android:layout_marginTop="24dp"
++        android:layout_marginTop="8dp"
+         android:layout_marginEnd="16dp"
+         android:layout_marginRight="16dp"
++        android:layout_marginBottom="8dp"
++        android:text="TextView"
+         android:textColor="@color/colorPrimaryDark"
+-        android:text="TextView"
+         android:textSize="25sp"
+         android:textStyle="bold"
+-        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+         app:layout_constraintStart_toEndOf="@+id/imgviewAllBurgers"
+         app:layout_constraintTop_toTopOf="parent" />
+ 
+-    <View
+-        android:id="@+id/view"
+-        android:layout_width="wrap_content"
+-        android:layout_height="2dp"
+-        android:layout_marginStart="16dp"
+-        android:layout_marginLeft="16dp"
+-        android:layout_marginTop="8dp"
+-        android:layout_marginEnd="16dp"
+-        android:layout_marginRight="16dp"
+-        android:background="@color/colorPrimaryDark"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toBottomOf="@+id/imgviewAllBurgers" />
+ 
+     <ImageView
+         android:id="@+id/imgviewAllBurgers"
+         android:layout_width="120dp"
+         android:layout_height="120dp"
+-        android:layout_marginStart="16dp"
++        android:scaleType="fitXY"
+         android:src="@mipmap/ic_launcher"
+-        android:layout_marginLeft="16dp"
+-        android:layout_marginTop="8dp"
++        android:background="#F3F8F7"
++        app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+ 
+-    <TextView
+-        android:id="@+id/tv_burgerPrice"
+-        android:layout_width="0dp"
++    <ImageView
++        android:id="@+id/imageView2"
++        android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+-        android:layout_marginStart="32dp"
+-        android:layout_marginLeft="32dp"
+-        android:layout_marginTop="40dp"
+-        android:layout_marginEnd="32dp"
+-        android:layout_marginRight="32dp"
+-        android:text="TextView"
+-        android:textSize="20sp"
+-        android:textStyle="bold"
+-        android:textColor="#F32121"
++        android:layout_marginTop="8dp"
++        android:layout_marginEnd="8dp"
++        android:layout_marginRight="8dp"
++        android:layout_marginBottom="8dp"
++        app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toEndOf="@+id/imgviewAllBurgers"
+-        app:layout_constraintTop_toBottomOf="@+id/tvburgerName" />
++        app:layout_constraintTop_toTopOf="parent"
++        app:srcCompat="@drawable/ic_baseline_arrow_right" />
++
++
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/example/mywork2nd/adapterClass.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.mywork2nd;\r\n\r\nimport android.content.Context;\r\nimport android.content.Intent;\r\nimport android.view.LayoutInflater;\r\nimport android.view.View;\r\nimport android.view.ViewGroup;\r\nimport android.widget.ImageView;\r\nimport android.widget.ListView;\r\nimport android.widget.TextView;\r\nimport android.widget.Toast;\r\n\r\nimport androidx.annotation.NonNull;\r\nimport androidx.constraintlayout.widget.ConstraintLayout;\r\nimport androidx.recyclerview.widget.RecyclerView;\r\n\r\nimport java.util.List;\r\n\r\nimport static com.example.mywork2nd.MainActivity.*;\r\n\r\npublic class adapterClass extends RecyclerView.Adapter<adapterClass.ViewHolder> {\r\n    String[] item_names;\r\n    int[] item_images;\r\n    Context context;\r\n    public adapterClass(Context c, String[] item_nam, int[] item_img) {\r\n        context = c;\r\n        item_names = item_nam;\r\n        item_images = item_img;\r\n    }\r\n\r\n    @NonNull\r\n    @Override\r\n    public adapterClass.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {\r\n        LayoutInflater inflater = LayoutInflater.from(context);\r\n        View view = inflater.inflate(R.layout.singleitem, parent, false);\r\n        return new ViewHolder(view);\r\n    }\r\n\r\n\r\n    @Override\r\n    public void onBindViewHolder(@NonNull adapterClass.ViewHolder holder, final int position) {\r\n        holder.tv_itemname.setText(item_names[position]);\r\n        holder.iv_item_image.setImageResource(item_images[position]);\r\n        holder.singleitem_layout.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View view) {\r\n                Intent intent = new Intent(context, Item_Detail_activity.class);\r\n                intent.putExtra(\"message\",item_names[position]);\r\n                intent.putExtra(\"message2\",item_images[position]);\r\n                context.startActivity(intent);\r\n            }\r\n        });\r\n    }\r\n\r\n    @Override\r\n    public int getItemCount() {\r\n        return item_images.length;\r\n    }\r\n\r\n    public static class ViewHolder extends RecyclerView.ViewHolder {\r\n        TextView tv_itemname;\r\n        ImageView iv_item_image;\r\n        ConstraintLayout singleitem_layout;\r\n\r\n        public ViewHolder(@NonNull View itemView) {\r\n            super(itemView);\r\n            tv_itemname = itemView.findViewById(R.id.tvname);\r\n            iv_item_image = itemView.findViewById(R.id.imgeicon);\r\n            singleitem_layout = itemView.findViewById(R.id.singleItem_layout);\r\n        }\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/mywork2nd/adapterClass.java	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ app/src/main/java/com/example/mywork2nd/adapterClass.java	(date 1616237732898)
+@@ -6,22 +6,16 @@
+ import android.view.View;
+ import android.view.ViewGroup;
+ import android.widget.ImageView;
+-import android.widget.ListView;
+ import android.widget.TextView;
+-import android.widget.Toast;
+-
+ import androidx.annotation.NonNull;
+ import androidx.constraintlayout.widget.ConstraintLayout;
+ import androidx.recyclerview.widget.RecyclerView;
+ 
+-import java.util.List;
+-
+-import static com.example.mywork2nd.MainActivity.*;
+-
+ public class adapterClass extends RecyclerView.Adapter<adapterClass.ViewHolder> {
+     String[] item_names;
+     int[] item_images;
+     Context context;
++
+     public adapterClass(Context c, String[] item_nam, int[] item_img) {
+         context = c;
+         item_names = item_nam;
+@@ -45,8 +39,8 @@
+             @Override
+             public void onClick(View view) {
+                 Intent intent = new Intent(context, Item_Detail_activity.class);
+-                intent.putExtra("message",item_names[position]);
+-                intent.putExtra("message2",item_images[position]);
++                intent.putExtra("message", item_names[position]);
++                intent.putExtra("message2", item_images[position]);
+                 context.startActivity(intent);
+             }
+         });
+Index: app/src/main/java/com/example/mywork2nd/viewactivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/mywork2nd/viewactivity.java	(date 1620750669234)
++++ app/src/main/java/com/example/mywork2nd/viewactivity.java	(date 1620750669234)
+@@ -0,0 +1,29 @@
++package com.example.mywork2nd;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.content.Intent;
++import android.os.Bundle;
++import android.widget.ImageView;
++import android.widget.TextView;
++
++public class viewactivity extends AppCompatActivity {
++    ImageView imageView_allitem;
++    TextView tvallitemdetail, tvallitemprice;
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_viewactivity);
++        tvallitemdetail = findViewById(R.id.tvdetailallitem);
++        tvallitemprice = findViewById(R.id.tvpriceallitem);
++        imageView_allitem = findViewById(R.id.imgviewallitem);
++        Intent intent = getIntent();
++        String name = intent.getStringExtra("name");
++        int image = intent.getIntExtra("image", 1);
++        String price = intent.getStringExtra("price");
++        imageView_allitem.setImageResource(image);
++        tvallitemprice.setText(price);
++        tvallitemdetail.setText(name);
++    }
++}
+\ No newline at end of file
+Index: app/src/main/java/com/example/mywork2nd/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.mywork2nd;\r\n\r\nimport androidx.annotation.RequiresApi;\r\nimport androidx.appcompat.app.AppCompatActivity;\r\nimport androidx.recyclerview.widget.LinearLayoutManager;\r\nimport androidx.recyclerview.widget.RecyclerView;\r\n\r\nimport android.os.Build;\r\nimport android.os.Bundle;\r\n\r\npublic class MainActivity extends AppCompatActivity {\r\n    String[] item_names;\r\n    RecyclerView recylerview1;\r\n    int[] item_images = {\r\n            R.drawable.burgers,\r\n            R.drawable.chicken,\r\n            R.drawable.dsserts,\r\n            R.drawable.hot_drinks,\r\n            R.drawable.sandwitch_wraps,\r\n    };\r\n    @RequiresApi(api = Build.VERSION_CODES.KITKAT)\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_main);\r\n        recylerview1 = findViewById(R.id.recycleview1);\r\n        item_names = getResources().getStringArray(R.array.resturent_menu);\r\n        adapterClass madapterOBJ = new adapterClass(this, item_names, item_images);\r\n        recylerview1.setAdapter(madapterOBJ);\r\n        recylerview1.setLayoutManager(new LinearLayoutManager(this));\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/mywork2nd/MainActivity.java	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ app/src/main/java/com/example/mywork2nd/MainActivity.java	(date 1621009235939)
+@@ -12,10 +12,10 @@
+     String[] item_names;
+     RecyclerView recylerview1;
+     int[] item_images = {
+-            R.drawable.burgers,
+-            R.drawable.chicken,
+-            R.drawable.dsserts,
+-            R.drawable.hot_drinks,
++            R.drawable.burger,
++            R.drawable.pizza,
++            R.drawable.dessert,
++            R.drawable.drinks,
+             R.drawable.sandwitch_wraps,
+     };
+     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+Index: app/src/main/res/layout/singleitem.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:id=\"@+id/singleItem_layout\"\r\n    android:layout_height=\"wrap_content\">\r\n    <ImageView\r\n        android:id=\"@+id/imgeicon\"\r\n        android:layout_width=\"120dp\"\r\n        android:layout_height=\"120dp\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:src=\"@mipmap/ic_launcher\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"1.0\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/tvname\"\r\n        android:layout_width=\"0dp\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"32dp\"\r\n        android:layout_marginLeft=\"32dp\"\r\n        android:layout_marginTop=\"16dp\"\r\n        android:layout_marginEnd=\"8dp\"\r\n        android:layout_marginRight=\"8dp\"\r\n        android:layout_marginBottom=\"16dp\"\r\n        android:layout_toEndOf=\"@+id/imgeicon\"\r\n        android:layout_toRightOf=\"@+id/imgeicon\"\r\n        android:text=\"Bilal Nasir\"\r\n        android:textColor=\"#0E0E0E\"\r\n        android:textSize=\"25sp\"\r\n        android:textStyle=\"bold\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toStartOf=\"@+id/imageView\"\r\n        app:layout_constraintHorizontal_bias=\"0.0\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/imgeicon\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/imageView\"\r\n        android:layout_width=\"35dp\"\r\n        android:layout_height=\"35dp\"\r\n        android:layout_marginTop=\"16dp\"\r\n        android:layout_marginEnd=\"8dp\"\r\n        android:layout_marginRight=\"8dp\"\r\n        android:layout_marginBottom=\"16dp\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"0.436\"\r\n        android:src=\"@drawable/ic_baseline_arrow_right\" />\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/singleitem.xml	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ app/src/main/res/layout/singleitem.xml	(date 1620741404502)
+@@ -1,16 +1,17 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+-    xmlns:tools="http://schemas.android.com/tools"
++    android:id="@+id/singleItem_layout"
+     android:layout_width="match_parent"
+-    android:id="@+id/singleItem_layout"
+-    android:layout_height="wrap_content">
++    android:layout_height="wrap_content"
++    android:background="#F3F8F7"
++    android:layout_margin="2dp">
++
+     <ImageView
+         android:id="@+id/imgeicon"
+         android:layout_width="120dp"
+         android:layout_height="120dp"
+-        android:layout_marginStart="16dp"
+-        android:layout_marginLeft="16dp"
++        android:scaleType="fitXY"
+         android:src="@mipmap/ic_launcher"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+@@ -21,12 +22,12 @@
+         android:id="@+id/tvname"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+-        android:layout_marginStart="32dp"
+-        android:layout_marginLeft="32dp"
+-        android:layout_marginTop="16dp"
+-        android:layout_marginEnd="8dp"
+-        android:layout_marginRight="8dp"
+-        android:layout_marginBottom="16dp"
++        android:layout_marginStart="16dp"
++        android:layout_marginLeft="16dp"
++        android:layout_marginTop="8dp"
++        android:layout_marginEnd="16dp"
++        android:layout_marginRight="16dp"
++        android:layout_marginBottom="8dp"
+         android:layout_toEndOf="@+id/imgeicon"
+         android:layout_toRightOf="@+id/imgeicon"
+         android:text="Bilal Nasir"
+@@ -47,9 +48,9 @@
+         android:layout_marginEnd="8dp"
+         android:layout_marginRight="8dp"
+         android:layout_marginBottom="16dp"
++        android:src="@drawable/ic_baseline_arrow_right"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintVertical_bias="0.436"
+-        android:src="@drawable/ic_baseline_arrow_right" />
++        app:layout_constraintVertical_bias="0.436" />
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/pizza_menu.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/pizza_menu.xml	(date 1621007710087)
++++ app/src/main/res/layout/pizza_menu.xml	(date 1621007710087)
+@@ -0,0 +1,53 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    android:id="@+id/layoutpizza"
++    android:layout_width="match_parent"
++    android:layout_height="wrap_content"
++    android:layout_margin="2dp"
++    android:background="#F3F8F7">
++
++    <TextView
++        android:id="@+id/tvpizzaNam"
++        android:layout_width="0dp"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="16dp"
++        android:layout_marginLeft="16dp"
++        android:layout_marginTop="8dp"
++        android:layout_marginEnd="16dp"
++        android:layout_marginRight="16dp"
++        android:layout_marginBottom="8dp"
++        android:text="TextView"
++        android:textColor="@color/colorPrimaryDark"
++        android:textSize="25sp"
++        android:textStyle="bold"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toStartOf="@+id/imageView3"
++        app:layout_constraintStart_toEndOf="@+id/imgviewAllpizza"
++        app:layout_constraintTop_toTopOf="parent" />
++
++    <ImageView
++        android:id="@+id/imgviewAllpizza"
++        android:layout_width="120dp"
++        android:layout_height="120dp"
++        android:background="#F3F8F7"
++        android:scaleType="fitXY"
++        android:src="@mipmap/ic_launcher"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent" />
++
++    <ImageView
++        android:id="@+id/imageView3"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginTop="8dp"
++        android:layout_marginEnd="8dp"
++        android:layout_marginRight="8dp"
++        android:layout_marginBottom="8dp"
++        android:src="@drawable/ic_baseline_arrow_right"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintTop_toTopOf="parent" />
++
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/example/mywork2nd/drink_menu_class.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.mywork2nd;\r\n\r\nimport android.content.Context;\r\nimport android.view.LayoutInflater;\r\nimport android.view.View;\r\nimport android.view.ViewGroup;\r\nimport android.widget.ImageView;\r\nimport android.widget.TextView;\r\n\r\nimport androidx.annotation.NonNull;\r\nimport androidx.recyclerview.widget.RecyclerView;\r\n\r\npublic class drink_menu_class extends RecyclerView.Adapter<drink_menu_class.ViewHolder> {\r\n    String[] alldrinkknam;\r\n    String[] alldrinkprice;\r\n    int[] alldrinkimge;\r\n    Context c;\r\n\r\n    public drink_menu_class(Context context, String[] alldrinknm, int[] drinkimg, String[] drinkprice) {\r\n        c = context;\r\n        alldrinkknam = alldrinknm;\r\n        alldrinkimge = drinkimg;\r\n        alldrinkprice = drinkprice;\r\n    }\r\n\r\n    @NonNull\r\n    @Override\r\n    public drink_menu_class.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {\r\n        LayoutInflater inflater = LayoutInflater.from(c);\r\n        View view = inflater.inflate(R.layout.drinks_menu, parent, false);\r\n        return new drink_menu_class.ViewHolder(view);\r\n    }\r\n\r\n    @Override\r\n    public void onBindViewHolder(@NonNull drink_menu_class.ViewHolder holder, int position) {\r\n        holder.tvdrinknam.setText(alldrinkknam[position]);\r\n        holder.imgviewdrink.setImageResource(alldrinkimge[position]);\r\n        holder.tvdrinkprice.setText(alldrinkprice[position]);\r\n    }\r\n\r\n    @Override\r\n    public int getItemCount() {\r\n        return alldrinkknam.length;\r\n    }\r\n\r\n    public static class ViewHolder extends RecyclerView.ViewHolder {\r\n        TextView tvdrinknam;\r\n        TextView tvdrinkprice;\r\n        ImageView imgviewdrink;\r\n\r\n        public ViewHolder(@NonNull View itemView) {\r\n            super(itemView);\r\n            tvdrinknam = itemView.findViewById(R.id.tvdrinkNam);\r\n            tvdrinkprice = itemView.findViewById(R.id.tvdrinksiprice);\r\n            imgviewdrink = itemView.findViewById(R.id.imgviewAlldrinks);\r\n        }\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/mywork2nd/drink_menu_class.java	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ app/src/main/java/com/example/mywork2nd/drink_menu_class.java	(date 1620739882417)
+@@ -1,6 +1,7 @@
+ package com.example.mywork2nd;
+ 
+ import android.content.Context;
++import android.content.Intent;
+ import android.view.LayoutInflater;
+ import android.view.View;
+ import android.view.ViewGroup;
+@@ -8,6 +9,7 @@
+ import android.widget.TextView;
+ 
+ import androidx.annotation.NonNull;
++import androidx.constraintlayout.widget.ConstraintLayout;
+ import androidx.recyclerview.widget.RecyclerView;
+ 
+ public class drink_menu_class extends RecyclerView.Adapter<drink_menu_class.ViewHolder> {
+@@ -32,10 +34,19 @@
+     }
+ 
+     @Override
+-    public void onBindViewHolder(@NonNull drink_menu_class.ViewHolder holder, int position) {
++    public void onBindViewHolder(@NonNull drink_menu_class.ViewHolder holder, final int position) {
+         holder.tvdrinknam.setText(alldrinkknam[position]);
+         holder.imgviewdrink.setImageResource(alldrinkimge[position]);
+-        holder.tvdrinkprice.setText(alldrinkprice[position]);
++        holder.layoutdrinks.setOnClickListener(new View.OnClickListener() {
++            @Override
++            public void onClick(View view) {
++                Intent intent = new Intent(c, viewactivity.class);
++                intent.putExtra("name", alldrinkknam[position]);
++                intent.putExtra("image", alldrinkimge[position]);
++                intent.putExtra("price", alldrinkprice[position]);
++                c.startActivity(intent);
++            }
++        });
+     }
+ 
+     @Override
+@@ -45,13 +56,13 @@
+ 
+     public static class ViewHolder extends RecyclerView.ViewHolder {
+         TextView tvdrinknam;
+-        TextView tvdrinkprice;
+         ImageView imgviewdrink;
++        ConstraintLayout layoutdrinks;
+ 
+         public ViewHolder(@NonNull View itemView) {
+             super(itemView);
+             tvdrinknam = itemView.findViewById(R.id.tvdrinkNam);
+-            tvdrinkprice = itemView.findViewById(R.id.tvdrinksiprice);
++            layoutdrinks=itemView.findViewById(R.id.layoutdrinks);
+             imgviewdrink = itemView.findViewById(R.id.imgviewAlldrinks);
+         }
+     }
+Index: app/src/main/java/com/example/mywork2nd/pizzaMenu_class.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/mywork2nd/pizzaMenu_class.java	(date 1621007710103)
++++ app/src/main/java/com/example/mywork2nd/pizzaMenu_class.java	(date 1621007710103)
+@@ -0,0 +1,69 @@
++package com.example.mywork2nd;
++
++import android.content.Context;
++import android.content.Intent;
++import android.view.LayoutInflater;
++import android.view.View;
++import android.view.ViewGroup;
++import android.widget.ImageView;
++import android.widget.TextView;
++
++import androidx.annotation.NonNull;
++import androidx.constraintlayout.widget.ConstraintLayout;
++import androidx.recyclerview.widget.RecyclerView;
++
++public class pizzaMenu_class extends RecyclerView.Adapter<pizzaMenu_class.ViewHolder> {
++    String[] all_pizzaname;
++    String[] all_pizzaPrice;
++    int[] all_pizzaImg;
++    Context c;
++
++    public pizzaMenu_class(Context context, String[] pizzanam, int[] pizzaimg, String[] pizzaPrices) {
++        c = context;
++        all_pizzaname = pizzanam;
++        all_pizzaImg = pizzaimg;
++        all_pizzaPrice = pizzaPrices;
++    }
++
++    @NonNull
++    @Override
++    public pizzaMenu_class.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
++        LayoutInflater inflater = LayoutInflater.from(c);
++        View view = inflater.inflate(R.layout.pizza_menu, parent, false);
++        return new ViewHolder(view);
++    }
++
++    @Override
++    public void onBindViewHolder(@NonNull pizzaMenu_class.ViewHolder holder, final int position) {
++        holder.tvpizzamenu.setText(all_pizzaname[position]);
++        holder.imageViewpizza.setImageResource(all_pizzaImg[position]);
++        holder.layoutpizza.setOnClickListener(new View.OnClickListener() {
++            @Override
++            public void onClick(View view) {
++                Intent intent = new Intent(c, viewactivity.class);
++                intent.putExtra("name", all_pizzaname[position]);
++                intent.putExtra("image", all_pizzaImg[position]);
++                intent.putExtra("price", all_pizzaPrice[position]);
++                c.startActivity(intent);
++            }
++        });
++    }
++
++    @Override
++    public int getItemCount() {
++        return all_pizzaname.length;
++    }
++
++    public static class ViewHolder extends RecyclerView.ViewHolder {
++        TextView tvpizzamenu;
++        ImageView imageViewpizza;
++        ConstraintLayout layoutpizza;
++
++        public ViewHolder(@NonNull View itemView) {
++            super(itemView);
++            tvpizzamenu = itemView.findViewById(R.id.tvpizzaNam);
++            layoutpizza = itemView.findViewById(R.id.layoutpizza);
++            imageViewpizza = itemView.findViewById(R.id.imgviewAllpizza);
++        }
++    }
++}
+Index: app/src/main/res/layout/drinks_menu.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"wrap_content\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\">\r\n    <TextView\r\n        android:id=\"@+id/tvdrinkNam\"\r\n        android:layout_width=\"0dp\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"16dp\"\r\n        android:layout_marginEnd=\"8dp\"\r\n        android:layout_marginRight=\"8dp\"\r\n        android:text=\"TextView\"\r\n        android:textColor=\"@color/colorPrimaryDark\"\r\n        android:textSize=\"25sp\"\r\n        android:textStyle=\"bold\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/imgviewAlldrinks\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <View\r\n        android:id=\"@+id/view\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"2dp\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"8dp\"\r\n        android:layout_marginEnd=\"16dp\"\r\n        android:layout_marginRight=\"16dp\"\r\n        android:background=\"@color/colorPrimaryDark\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/imgviewAlldrinks\" />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/imgviewAlldrinks\"\r\n        android:layout_width=\"120dp\"\r\n        android:layout_height=\"120dp\"\r\n        android:layout_marginStart=\"16dp\"\r\n        android:layout_marginLeft=\"16dp\"\r\n        android:layout_marginTop=\"8dp\"\r\n        android:src=\"@mipmap/ic_launcher\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/tvdrinksiprice\"\r\n        android:layout_width=\"0dp\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginStart=\"32dp\"\r\n        android:layout_marginLeft=\"32dp\"\r\n        android:layout_marginTop=\"40dp\"\r\n        android:layout_marginEnd=\"32dp\"\r\n        android:layout_marginRight=\"32dp\"\r\n        android:layout_marginBottom=\"8dp\"\r\n        android:text=\"TextView\"\r\n        android:textColor=\"#F32121\"\r\n        android:textSize=\"20sp\"\r\n        android:textStyle=\"bold\"\r\n        app:layout_constraintBottom_toTopOf=\"@+id/view\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintStart_toEndOf=\"@+id/imgviewAlldrinks\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/tvdrinkNam\" />\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/drinks_menu.xml	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ app/src/main/res/layout/drinks_menu.xml	(date 1620741404518)
+@@ -1,66 +1,54 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
++    android:background="#F3F8F7"
++    android:layout_margin="2dp"
++    android:id="@+id/layoutdrinks"
+     xmlns:app="http://schemas.android.com/apk/res-auto">
++
+     <TextView
+         android:id="@+id/tvdrinkNam"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="16dp"
+         android:layout_marginLeft="16dp"
+-        android:layout_marginTop="16dp"
+-        android:layout_marginEnd="8dp"
+-        android:layout_marginRight="8dp"
++        android:layout_marginTop="8dp"
++        android:layout_marginEnd="16dp"
++        android:layout_marginRight="16dp"
++        android:layout_marginBottom="8dp"
+         android:text="TextView"
+         android:textColor="@color/colorPrimaryDark"
+         android:textSize="25sp"
+         android:textStyle="bold"
+-        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+         app:layout_constraintStart_toEndOf="@+id/imgviewAlldrinks"
+         app:layout_constraintTop_toTopOf="parent" />
+ 
+-    <View
+-        android:id="@+id/view"
+-        android:layout_width="wrap_content"
+-        android:layout_height="2dp"
+-        android:layout_marginStart="16dp"
+-        android:layout_marginLeft="16dp"
+-        android:layout_marginTop="8dp"
+-        android:layout_marginEnd="16dp"
+-        android:layout_marginRight="16dp"
+-        android:background="@color/colorPrimaryDark"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toBottomOf="@+id/imgviewAlldrinks" />
+-
+     <ImageView
+         android:id="@+id/imgviewAlldrinks"
+         android:layout_width="120dp"
+         android:layout_height="120dp"
+-        android:layout_marginStart="16dp"
+-        android:layout_marginLeft="16dp"
+-        android:layout_marginTop="8dp"
+         android:src="@mipmap/ic_launcher"
++        android:background="#F3F8F7"
++        android:scaleType="fitXY"
++        app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+ 
+-    <TextView
+-        android:id="@+id/tvdrinksiprice"
+-        android:layout_width="0dp"
++    <ImageView
++        android:id="@+id/imageView5"
++        android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+-        android:layout_marginStart="32dp"
+-        android:layout_marginLeft="32dp"
+-        android:layout_marginTop="40dp"
+-        android:layout_marginEnd="32dp"
+-        android:layout_marginRight="32dp"
++        android:layout_marginTop="8dp"
++        android:layout_marginEnd="8dp"
++        android:layout_marginRight="8dp"
+         android:layout_marginBottom="8dp"
+-        android:text="TextView"
+-        android:textColor="#F32121"
+-        android:textSize="20sp"
+-        android:textStyle="bold"
+-        app:layout_constraintBottom_toTopOf="@+id/view"
++        app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toEndOf="@+id/imgviewAlldrinks"
+-        app:layout_constraintTop_toBottomOf="@+id/tvdrinkNam" />
++        app:layout_constraintTop_toTopOf="parent"
++        app:srcCompat="@drawable/ic_baseline_arrow_right" />
++
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/example/mywork2nd/burgerMenu_class.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.mywork2nd;\r\n\r\nimport android.content.Context;\r\nimport android.view.LayoutInflater;\r\nimport android.view.View;\r\nimport android.view.ViewGroup;\r\nimport android.widget.ImageView;\r\nimport android.widget.ListView;\r\nimport android.widget.TextView;\r\n\r\nimport androidx.annotation.NonNull;\r\nimport androidx.recyclerview.widget.RecyclerView;\r\n\r\npublic class burgerMenu_class extends RecyclerView.Adapter<burgerMenu_class.ViewHolder> {\r\n    String[] all_burgersNam;\r\n    String[] all_burgerPrices;\r\n    int[] all_burgersImg;\r\n    Context c;\r\n\r\n    public burgerMenu_class(Context context, String[] all_burgers, int[] burgersImges,String[]burgerPrices) {\r\n        c = context;\r\n        all_burgersNam = all_burgers;\r\n        all_burgersImg = burgersImges;\r\n        all_burgerPrices=burgerPrices;\r\n    }\r\n\r\n    @NonNull\r\n    @Override\r\n    public burgerMenu_class.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {\r\n        LayoutInflater inflater = LayoutInflater.from(c);\r\n        View view = inflater.inflate(R.layout.burger_menu, parent, false);\r\n        return new ViewHolder(view);\r\n    }\r\n\r\n    @Override\r\n    public void onBindViewHolder(@NonNull burgerMenu_class.ViewHolder holder, int position) {\r\n        holder.tvburgerMenu.setText(all_burgersNam[position]);\r\n        holder.imageViewBurgers.setImageResource(all_burgersImg[position]);\r\n        holder.tvburgerprice.setText(all_burgerPrices[position]);\r\n    }\r\n\r\n    @Override\r\n    public int getItemCount() {\r\n        return all_burgersNam.length;\r\n    }\r\n\r\n    public static class ViewHolder extends RecyclerView.ViewHolder {\r\n        TextView tvburgerMenu;\r\n        TextView tvburgerprice;\r\n        ImageView imageViewBurgers;\r\n\r\n        public ViewHolder(@NonNull View itemView) {\r\n            super(itemView);\r\n            tvburgerMenu = itemView.findViewById(R.id.tvburgerName);\r\n            tvburgerprice = itemView.findViewById(R.id.tv_burgerPrice);\r\n            imageViewBurgers=itemView.findViewById(R.id.imgviewAllBurgers);\r\n        }\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/mywork2nd/burgerMenu_class.java	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ app/src/main/java/com/example/mywork2nd/burgerMenu_class.java	(date 1620739016514)
+@@ -1,6 +1,7 @@
+ package com.example.mywork2nd;
+ 
+ import android.content.Context;
++import android.content.Intent;
+ import android.view.LayoutInflater;
+ import android.view.View;
+ import android.view.ViewGroup;
+@@ -9,6 +10,7 @@
+ import android.widget.TextView;
+ 
+ import androidx.annotation.NonNull;
++import androidx.constraintlayout.widget.ConstraintLayout;
+ import androidx.recyclerview.widget.RecyclerView;
+ 
+ public class burgerMenu_class extends RecyclerView.Adapter<burgerMenu_class.ViewHolder> {
+@@ -17,11 +19,11 @@
+     int[] all_burgersImg;
+     Context c;
+ 
+-    public burgerMenu_class(Context context, String[] all_burgers, int[] burgersImges,String[]burgerPrices) {
++    public burgerMenu_class(Context context, String[] all_burgers, int[] burgersImges, String[] burgerPrices) {
+         c = context;
+         all_burgersNam = all_burgers;
+         all_burgersImg = burgersImges;
+-        all_burgerPrices=burgerPrices;
++        all_burgerPrices = burgerPrices;
+     }
+ 
+     @NonNull
+@@ -33,10 +35,19 @@
+     }
+ 
+     @Override
+-    public void onBindViewHolder(@NonNull burgerMenu_class.ViewHolder holder, int position) {
++    public void onBindViewHolder(@NonNull burgerMenu_class.ViewHolder holder, final int position) {
+         holder.tvburgerMenu.setText(all_burgersNam[position]);
+         holder.imageViewBurgers.setImageResource(all_burgersImg[position]);
+-        holder.tvburgerprice.setText(all_burgerPrices[position]);
++        holder.layoutburgers.setOnClickListener(new View.OnClickListener() {
++            @Override
++            public void onClick(View view) {
++                Intent intent = new Intent(c, viewactivity.class);
++                intent.putExtra("name", all_burgersNam[position]);
++                intent.putExtra("image", all_burgersImg[position]);
++                intent.putExtra("price", all_burgerPrices[position]);
++                c.startActivity(intent);
++            }
++        });
+     }
+ 
+     @Override
+@@ -46,14 +57,14 @@
+ 
+     public static class ViewHolder extends RecyclerView.ViewHolder {
+         TextView tvburgerMenu;
+-        TextView tvburgerprice;
++
+         ImageView imageViewBurgers;
+-
++        ConstraintLayout layoutburgers;
+         public ViewHolder(@NonNull View itemView) {
+             super(itemView);
+             tvburgerMenu = itemView.findViewById(R.id.tvburgerName);
+-            tvburgerprice = itemView.findViewById(R.id.tv_burgerPrice);
+-            imageViewBurgers=itemView.findViewById(R.id.imgviewAllBurgers);
++            imageViewBurgers = itemView.findViewById(R.id.imgviewAllBurgers);
++            layoutburgers=itemView.findViewById(R.id.burgerlayout);
+         }
+     }
+ }
+Index: app/src/main/java/com/example/mywork2nd/dessertMenu_class.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.mywork2nd;\r\n\r\nimport android.content.Context;\r\nimport android.view.LayoutInflater;\r\nimport android.view.View;\r\nimport android.view.ViewGroup;\r\nimport android.widget.ImageView;\r\nimport android.widget.TextView;\r\n\r\nimport androidx.annotation.NonNull;\r\nimport androidx.recyclerview.widget.RecyclerView;\r\n\r\npublic class dessertMenu_class extends RecyclerView.Adapter<dessertMenu_class.ViewHolder> {\r\n    String[] all_dessertNam;\r\n    String[] all_dessertPrice;\r\n    int[] all_dessertImg;\r\n    Context c;\r\n\r\n    public dessertMenu_class(Context context, String[] all_dessert, int[] dessertimg, String[] dessertprice) {\r\n        c = context;\r\n        all_dessertNam = all_dessert;\r\n        all_dessertImg = dessertimg;\r\n        all_dessertPrice = dessertprice;\r\n    }\r\n\r\n    @NonNull\r\n    @Override\r\n    public dessertMenu_class.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {\r\n        LayoutInflater inflater = LayoutInflater.from(c);\r\n        View view = inflater.inflate(R.layout.dessert_menu, parent, false);\r\n        return new ViewHolder(view);\r\n    }\r\n\r\n    @Override\r\n    public void onBindViewHolder(@NonNull dessertMenu_class.ViewHolder holder, int position) {\r\n        holder.tvdessertmenu.setText(all_dessertNam[position]);\r\n        holder.imgviewdessert.setImageResource(all_dessertImg[position]);\r\n        holder.tvdessertprice.setText(all_dessertPrice[position]);\r\n    }\r\n\r\n    @Override\r\n    public int getItemCount() {\r\n        return all_dessertNam.length;\r\n    }\r\n\r\n    public static class ViewHolder extends RecyclerView.ViewHolder {\r\n        TextView tvdessertmenu;\r\n        TextView tvdessertprice;\r\n        ImageView imgviewdessert;\r\n\r\n        public ViewHolder(@NonNull View itemView) {\r\n            super(itemView);\r\n            tvdessertmenu = itemView.findViewById(R.id.tvdessertNam);\r\n            tvdessertprice = itemView.findViewById(R.id.tvdessertprice);\r\n            imgviewdessert = itemView.findViewById(R.id.imgviewAlldessert);\r\n        }\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/mywork2nd/dessertMenu_class.java	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ app/src/main/java/com/example/mywork2nd/dessertMenu_class.java	(date 1620739367191)
+@@ -1,6 +1,7 @@
+ package com.example.mywork2nd;
+ 
+ import android.content.Context;
++import android.content.Intent;
+ import android.view.LayoutInflater;
+ import android.view.View;
+ import android.view.ViewGroup;
+@@ -8,6 +9,7 @@
+ import android.widget.TextView;
+ 
+ import androidx.annotation.NonNull;
++import androidx.constraintlayout.widget.ConstraintLayout;
+ import androidx.recyclerview.widget.RecyclerView;
+ 
+ public class dessertMenu_class extends RecyclerView.Adapter<dessertMenu_class.ViewHolder> {
+@@ -32,10 +34,19 @@
+     }
+ 
+     @Override
+-    public void onBindViewHolder(@NonNull dessertMenu_class.ViewHolder holder, int position) {
++    public void onBindViewHolder(@NonNull dessertMenu_class.ViewHolder holder, final int position) {
+         holder.tvdessertmenu.setText(all_dessertNam[position]);
+         holder.imgviewdessert.setImageResource(all_dessertImg[position]);
+-        holder.tvdessertprice.setText(all_dessertPrice[position]);
++        holder.layoutdessert.setOnClickListener(new View.OnClickListener() {
++            @Override
++            public void onClick(View view) {
++                Intent intent = new Intent(c, viewactivity.class);
++                intent.putExtra("name", all_dessertNam[position]);
++                intent.putExtra("image", all_dessertImg[position]);
++                intent.putExtra("price", all_dessertPrice[position]);
++                c.startActivity(intent);
++            }
++        });
+     }
+ 
+     @Override
+@@ -45,13 +56,13 @@
+ 
+     public static class ViewHolder extends RecyclerView.ViewHolder {
+         TextView tvdessertmenu;
+-        TextView tvdessertprice;
+         ImageView imgviewdessert;
++        ConstraintLayout layoutdessert;
+ 
+         public ViewHolder(@NonNull View itemView) {
+             super(itemView);
+             tvdessertmenu = itemView.findViewById(R.id.tvdessertNam);
+-            tvdessertprice = itemView.findViewById(R.id.tvdessertprice);
++            layoutdessert = itemView.findViewById(R.id.layoutdessert);
+             imgviewdessert = itemView.findViewById(R.id.imgviewAlldessert);
+         }
+     }
+Index: app/src/main/java/com/example/mywork2nd/sandWrapMenu_class.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.mywork2nd;\r\n\r\nimport android.content.Context;\r\nimport android.view.LayoutInflater;\r\nimport android.view.View;\r\nimport android.view.ViewGroup;\r\nimport android.widget.ImageView;\r\nimport android.widget.TextView;\r\n\r\nimport androidx.annotation.NonNull;\r\nimport androidx.recyclerview.widget.RecyclerView;\r\n\r\npublic class sandWrapMenu_class extends RecyclerView.Adapter<sandWrapMenu_class.ViewHolder> {\r\n    String[] allsandwichNam;\r\n    String[] allsandwichprice;\r\n    int[] allsandwichimage;\r\n    Context c;\r\n\r\n    public sandWrapMenu_class(Context context, String[] allsandwich, int[] sandimg, String[] sandprice) {\r\n        c = context;\r\n        allsandwichNam = allsandwich;\r\n        allsandwichimage = sandimg;\r\n        allsandwichprice = sandprice;\r\n    }\r\n\r\n    @NonNull\r\n    @Override\r\n    public sandWrapMenu_class.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {\r\n        LayoutInflater inflater = LayoutInflater.from(c);\r\n        View view = inflater.inflate(R.layout.sandwrap_menu, parent, false);\r\n        return new sandWrapMenu_class.ViewHolder(view);\r\n    }\r\n\r\n    @Override\r\n    public void onBindViewHolder(@NonNull sandWrapMenu_class.ViewHolder holder, int position) {\r\n        holder.tvsandNam.setText(allsandwichNam[position]);\r\n        holder.imagesand.setImageResource(allsandwichimage[position]);\r\n        holder.tvsandprice.setText(allsandwichprice[position]);\r\n    }\r\n\r\n    @Override\r\n    public int getItemCount() {\r\n        return allsandwichNam.length;\r\n    }\r\n\r\n    public static class ViewHolder extends RecyclerView.ViewHolder {\r\n        TextView tvsandNam;\r\n        TextView tvsandprice;\r\n        ImageView imagesand;\r\n\r\n        public ViewHolder(@NonNull View itemView) {\r\n            super(itemView);\r\n            tvsandNam = itemView.findViewById(R.id.tvsandName);\r\n            tvsandprice = itemView.findViewById(R.id.tvsandwichiprice);\r\n            imagesand = itemView.findViewById(R.id.imgviewAllsandwich);\r\n        }\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/mywork2nd/sandWrapMenu_class.java	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ app/src/main/java/com/example/mywork2nd/sandWrapMenu_class.java	(date 1620739882426)
+@@ -1,6 +1,7 @@
+ package com.example.mywork2nd;
+ 
+ import android.content.Context;
++import android.content.Intent;
+ import android.view.LayoutInflater;
+ import android.view.View;
+ import android.view.ViewGroup;
+@@ -8,6 +9,7 @@
+ import android.widget.TextView;
+ 
+ import androidx.annotation.NonNull;
++import androidx.constraintlayout.widget.ConstraintLayout;
+ import androidx.recyclerview.widget.RecyclerView;
+ 
+ public class sandWrapMenu_class extends RecyclerView.Adapter<sandWrapMenu_class.ViewHolder> {
+@@ -32,10 +34,19 @@
+     }
+ 
+     @Override
+-    public void onBindViewHolder(@NonNull sandWrapMenu_class.ViewHolder holder, int position) {
++    public void onBindViewHolder(@NonNull sandWrapMenu_class.ViewHolder holder, final int position) {
+         holder.tvsandNam.setText(allsandwichNam[position]);
+         holder.imagesand.setImageResource(allsandwichimage[position]);
+-        holder.tvsandprice.setText(allsandwichprice[position]);
++        holder.layoutsand_wraps.setOnClickListener(new View.OnClickListener() {
++            @Override
++            public void onClick(View view) {
++                Intent intent = new Intent(c, viewactivity.class);
++                intent.putExtra("name", allsandwichNam[position]);
++                intent.putExtra("image", allsandwichimage[position]);
++                intent.putExtra("price", allsandwichprice[position]);
++                c.startActivity(intent);
++            }
++        });
+     }
+ 
+     @Override
+@@ -45,13 +56,13 @@
+ 
+     public static class ViewHolder extends RecyclerView.ViewHolder {
+         TextView tvsandNam;
+-        TextView tvsandprice;
++        ConstraintLayout layoutsand_wraps;
+         ImageView imagesand;
+ 
+         public ViewHolder(@NonNull View itemView) {
+             super(itemView);
+             tvsandNam = itemView.findViewById(R.id.tvsandName);
+-            tvsandprice = itemView.findViewById(R.id.tvsandwichiprice);
++            layoutsand_wraps = itemView.findViewById(R.id.layoutsand_wraps);
+             imagesand = itemView.findViewById(R.id.imgviewAllsandwich);
+         }
+     }
+Index: app/src/main/res/layout/activity_viewactivity.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_viewactivity.xml	(date 1621100427688)
++++ app/src/main/res/layout/activity_viewactivity.xml	(date 1621100427688)
+@@ -0,0 +1,39 @@
++<?xml version="1.0" encoding="utf-8"?>
++<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:orientation="vertical"
++    android:weightSum="6"
++    tools:context=".viewactivity">
++
++    <ImageView
++        android:id="@+id/imgviewallitem"
++        android:layout_width="match_parent"
++        android:layout_height="0dp"
++        android:layout_margin="5dp"
++        android:layout_weight="4"
++        android:layout_gravity="center"
++        tools:srcCompat="@drawable/jalapeno_crunch" />
++
++    <TextView
++        android:id="@+id/tvdetailallitem"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_gravity="center"
++        android:layout_marginTop="20dp"
++        android:layout_weight="0.5"
++        android:text="item name"
++        android:textColor="@color/colorPrimaryDark"
++        android:textSize="25dp" />
++
++    <TextView
++        android:id="@+id/tvpriceallitem"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_gravity="center"
++        android:layout_weight="0.5"
++        android:text="price"
++        android:textColor="@color/ic_launcher_background"
++        android:textSize="20dp" />
++</LinearLayout>
+\ No newline at end of file
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    package=\"com.example.mywork2nd\">\r\n\r\n    <uses-permission android:name=\"android.permission.INTERNET\" />\r\n\r\n    <application\r\n        android:allowBackup=\"true\"\r\n        android:icon=\"@mipmap/ic_launcher\"\r\n        android:label=\"@string/app_name\"\r\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/AppTheme\">\r\n        <activity android:name=\".Item_Detail_activity\"\r\n            android:parentActivityName=\".MainActivity\"\r\n            />\r\n\r\n        <meta-data\r\n            android:name=\"com.google.android.gms.ads.AD_MANAGER_APP\"\r\n            android:value=\"true\" />\r\n\r\n        <activity android:name=\".stopwatch_activity\" />\r\n        <activity android:name=\".MainActivity\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity>\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/AndroidManifest.xml	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ app/src/main/AndroidManifest.xml	(date 1620743400761)
+@@ -1,5 +1,6 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++<manifest
++    xmlns:android="http://schemas.android.com/apk/res/android"
+     package="com.example.mywork2nd">
+ 
+     <uses-permission android:name="android.permission.INTERNET" />
+@@ -11,18 +12,20 @@
+         android:roundIcon="@mipmap/ic_launcher_round"
+         android:supportsRtl="true"
+         android:theme="@style/AppTheme">
+-        <activity android:name=".Item_Detail_activity"
+-            android:parentActivityName=".MainActivity"
+-            />
++        <activity android:name=".viewactivity">
++        </activity>
++        <activity
++            android:name=".Item_Detail_activity"
++            android:parentActivityName=".MainActivity" />
+ 
+         <meta-data
+             android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+             android:value="true" />
+ 
+-        <activity android:name=".stopwatch_activity" />
+         <activity android:name=".MainActivity">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
++
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+         </activity>
+Index: gradle/wrapper/gradle-wrapper.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#Fri Oct 09 20:56:46 PKT 2020\r\ndistributionBase=GRADLE_USER_HOME\r\ndistributionPath=wrapper/dists\r\nzipStoreBase=GRADLE_USER_HOME\r\nzipStorePath=wrapper/dists\r\ndistributionUrl=https\\://services.gradle.org/distributions/gradle-6.1.1-all.zip\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>windows-1252
+===================================================================
+--- gradle/wrapper/gradle-wrapper.properties	(revision c231b2a902b8e1bb016c4d07aabdaf839d534f5c)
++++ gradle/wrapper/gradle-wrapper.properties	(date 1620497374003)
+@@ -1,6 +1,6 @@
+-#Fri Oct 09 20:56:46 PKT 2020
++#Sat May 08 23:09:33 PKT 2021
+ distributionBase=GRADLE_USER_HOME
+ distributionPath=wrapper/dists
+ zipStoreBase=GRADLE_USER_HOME
+ zipStorePath=wrapper/dists
+-distributionUrl=https\://services.gradle.org/distributions/gradle-6.1.1-all.zip
++distributionUrl=https\://services.gradle.org/distributions/gradle-6.5-bin.zip
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/compiler.xml	(date 1620497332895)
++++ .idea/compiler.xml	(date 1620497332895)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <bytecodeTargetLevel target="12" />
++  </component>
++</project>
+\ No newline at end of file
