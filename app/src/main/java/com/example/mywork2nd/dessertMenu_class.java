@@ -1,6 +1,7 @@
 package com.example.mywork2nd;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class dessertMenu_class extends RecyclerView.Adapter<dessertMenu_class.ViewHolder> {
@@ -32,10 +34,19 @@ public class dessertMenu_class extends RecyclerView.Adapter<dessertMenu_class.Vi
     }
 
     @Override
-    public void onBindViewHolder(@NonNull dessertMenu_class.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull dessertMenu_class.ViewHolder holder, final int position) {
         holder.tvdessertmenu.setText(all_dessertNam[position]);
         holder.imgviewdessert.setImageResource(all_dessertImg[position]);
-        holder.tvdessertprice.setText(all_dessertPrice[position]);
+        holder.layoutdessert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(c, viewactivity.class);
+                intent.putExtra("name", all_dessertNam[position]);
+                intent.putExtra("image", all_dessertImg[position]);
+                intent.putExtra("price", all_dessertPrice[position]);
+                c.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -45,13 +56,13 @@ public class dessertMenu_class extends RecyclerView.Adapter<dessertMenu_class.Vi
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView tvdessertmenu;
-        TextView tvdessertprice;
         ImageView imgviewdessert;
+        ConstraintLayout layoutdessert;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             tvdessertmenu = itemView.findViewById(R.id.tvdessertNam);
-            tvdessertprice = itemView.findViewById(R.id.tvdessertprice);
+            layoutdessert = itemView.findViewById(R.id.layoutdessert);
             imgviewdessert = itemView.findViewById(R.id.imgviewAlldessert);
         }
     }

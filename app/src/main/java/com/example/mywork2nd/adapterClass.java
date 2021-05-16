@@ -6,22 +6,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
-
-import java.util.List;
-
-import static com.example.mywork2nd.MainActivity.*;
 
 public class adapterClass extends RecyclerView.Adapter<adapterClass.ViewHolder> {
     String[] item_names;
     int[] item_images;
     Context context;
+
     public adapterClass(Context c, String[] item_nam, int[] item_img) {
         context = c;
         item_names = item_nam;
@@ -45,8 +39,8 @@ public class adapterClass extends RecyclerView.Adapter<adapterClass.ViewHolder> 
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, Item_Detail_activity.class);
-                intent.putExtra("message",item_names[position]);
-                intent.putExtra("message2",item_images[position]);
+                intent.putExtra("message", item_names[position]);
+                intent.putExtra("message2", item_images[position]);
                 context.startActivity(intent);
             }
         });

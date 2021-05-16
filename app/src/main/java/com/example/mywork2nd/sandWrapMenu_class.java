@@ -1,6 +1,7 @@
 package com.example.mywork2nd;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class sandWrapMenu_class extends RecyclerView.Adapter<sandWrapMenu_class.ViewHolder> {
@@ -32,10 +34,19 @@ public class sandWrapMenu_class extends RecyclerView.Adapter<sandWrapMenu_class.
     }
 
     @Override
-    public void onBindViewHolder(@NonNull sandWrapMenu_class.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull sandWrapMenu_class.ViewHolder holder, final int position) {
         holder.tvsandNam.setText(allsandwichNam[position]);
         holder.imagesand.setImageResource(allsandwichimage[position]);
-        holder.tvsandprice.setText(allsandwichprice[position]);
+        holder.layoutsand_wraps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(c, viewactivity.class);
+                intent.putExtra("name", allsandwichNam[position]);
+                intent.putExtra("image", allsandwichimage[position]);
+                intent.putExtra("price", allsandwichprice[position]);
+                c.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -45,13 +56,13 @@ public class sandWrapMenu_class extends RecyclerView.Adapter<sandWrapMenu_class.
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView tvsandNam;
-        TextView tvsandprice;
+        ConstraintLayout layoutsand_wraps;
         ImageView imagesand;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             tvsandNam = itemView.findViewById(R.id.tvsandName);
-            tvsandprice = itemView.findViewById(R.id.tvsandwichiprice);
+            layoutsand_wraps = itemView.findViewById(R.id.layoutsand_wraps);
             imagesand = itemView.findViewById(R.id.imgviewAllsandwich);
         }
     }

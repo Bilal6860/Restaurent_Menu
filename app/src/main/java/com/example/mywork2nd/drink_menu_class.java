@@ -1,6 +1,7 @@
 package com.example.mywork2nd;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class drink_menu_class extends RecyclerView.Adapter<drink_menu_class.ViewHolder> {
@@ -32,10 +34,19 @@ public class drink_menu_class extends RecyclerView.Adapter<drink_menu_class.View
     }
 
     @Override
-    public void onBindViewHolder(@NonNull drink_menu_class.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull drink_menu_class.ViewHolder holder, final int position) {
         holder.tvdrinknam.setText(alldrinkknam[position]);
         holder.imgviewdrink.setImageResource(alldrinkimge[position]);
-        holder.tvdrinkprice.setText(alldrinkprice[position]);
+        holder.layoutdrinks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(c, viewactivity.class);
+                intent.putExtra("name", alldrinkknam[position]);
+                intent.putExtra("image", alldrinkimge[position]);
+                intent.putExtra("price", alldrinkprice[position]);
+                c.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -45,13 +56,13 @@ public class drink_menu_class extends RecyclerView.Adapter<drink_menu_class.View
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView tvdrinknam;
-        TextView tvdrinkprice;
         ImageView imgviewdrink;
+        ConstraintLayout layoutdrinks;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             tvdrinknam = itemView.findViewById(R.id.tvdrinkNam);
-            tvdrinkprice = itemView.findViewById(R.id.tvdrinksiprice);
+            layoutdrinks=itemView.findViewById(R.id.layoutdrinks);
             imgviewdrink = itemView.findViewById(R.id.imgviewAlldrinks);
         }
     }

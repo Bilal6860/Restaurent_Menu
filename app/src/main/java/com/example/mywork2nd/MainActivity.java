@@ -12,10 +12,10 @@ public class MainActivity extends AppCompatActivity {
     String[] item_names;
     RecyclerView recylerview1;
     int[] item_images = {
-            R.drawable.burgers,
-            R.drawable.chicken,
-            R.drawable.dsserts,
-            R.drawable.hot_drinks,
+            R.drawable.burger,
+            R.drawable.pizza,
+            R.drawable.dessert,
+            R.drawable.drinks,
             R.drawable.sandwitch_wraps,
     };
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
