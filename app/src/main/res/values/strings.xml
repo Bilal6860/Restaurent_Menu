@@ -1,62 +1,87 @@
 <resources>
     <string name="app_name">Restaurent Menu</string>
-    <string name="start">start</string>
-    <string name="pause">pause</string>
-    <string name="reset">reset</string>
-    <string name="exit">exit</string>
-    <string name="about_us">about us</string>
+
     <string-array name="resturent_menu">
         <item>Burgers</item>
-        <item>Chicken</item>
+        <item>Pizza</item>
         <item>Desserts</item>
         <item>Drinks</item>
         <item>Sandwiches &amp; Wraps</item>
     </string-array>
+
     <string-array name="burgers_menu">
         <item>Crunchos</item>
         <item>Doppler</item>
         <item>Jalapeno Crunch</item>
         <item>Mushroom Melt</item>
-        <item>Pizza Burger</item>
+        <item>Classic Zinger</item>
         <item>Triple Cheese</item>
     </string-array>
+
     <string-array name="burgers_prices">
-        <item>300 Rs</item>
-        <item>340 Rs</item>
-        <item>280 Rs</item>
-        <item>200 Rs</item>
-        <item>250 Rs</item>
-        <item>370 Rs</item>
-    </string-array>
-    <string-array name="chicken_menu">
-        <item>Hot wings</item>
-        <item>Roasted chicken</item>
-        <item>Grilled steak</item>
-        <item>chicken Tikka </item>
+        <item>350Rs</item>
+        <item>400Rs</item>
+        <item>300Rs</item>
+        <item>340Rs</item>
+        <item>300Rs</item>
+        <item>380Rs</item>
     </string-array>
 
-    <string-array name="chicken_prices">
-        <item>600 Rs</item>
-        <item>1000 Rs</item>
-        <item>450 Rs</item>
-        <item>900 Rs</item>
+    <string-array name="pizza_menu">
+        <item>Chicken Tikka</item>
+        <item>Chicken Tandoori</item>
+        <item>Chicken Golden Delight</item>
+        <item>chicken Fajita</item>
+        <item>Pepperoni</item>
+        <item>Mozzarella Cheese</item>
     </string-array>
+
+    <string-array name="pizza_prices">
+        <item>S= 600Rs\nM= 900Rs\nL= 1200Rs</item>
+        <item>S= 700Rs\nM= 1000Rs\nL= 1300Rs</item>
+        <item>S=650Rs\nM=800Rs\nL=1100Rs</item>
+        <item>S=600Rs\nM=900Rs\nL=1200Rs</item>
+        <item>S= 600Rs\nM= 800Rs\nL= 1050Rs</item>
+        <item>S=700Rs\n  M=900Rs\nL=1200Rs</item>
+    </string-array>
+
     <string-array name="dessert_menu">
-        <item>Banofie Pie</item>
+        <item>Banoffee Pie</item>
+        <item>Chocolate Pie</item>
+        <item>Apple Pie</item>
         <item>Chocolate Brownie</item>
-        <item>Nutella Cheese Cake</item>
         <item>Redvelvet Cupcake</item>
-        <item>Strawberry Millefeuillie</item>
+        <item>Chocolate Cupcake</item>
+        <item>Vanilla Cupcake</item>
+        <item>Special Birthday Cake</item>
+        <item>Special Birthday Cake</item>
+        <item>Chocolate Ice cream</item>
+        <item>Oreo Ice cream</item>
+        <item>Mango Ice cream</item>
     </string-array>
 
     <string-array name="dessert_prices">
-        <item>800 Rs</item>
-        <item>7000 Rs</item>
-        <item>550 Rs</item>
-        <item>400 Rs</item>
-        <item>600 Rs</item>
+        <item>500Rs</item>
+        <item>550Rs</item>
+        <item>500Rs</item>
+        <item>110Rs/piece</item>
+        <item>400Rs</item>
+        <item>400Rs</item>
+        <item>400Rs</item>
+        <item>1lb= 800Rs\n2lb= 1550</item>
+        <item>1lb= 800Rs\n2lb= 1550</item>
+        <item>300Rs</item>
+        <item>300Rs</item>
+        <item>300Rs</item>
     </string-array>
+
     <string-array name="drinks_menu">
+        <item>Strawberry Oreo</item>
+        <item>Salted Caramel</item>
+        <item>Fresh Carrot Orange</item>
+        <item>Fresh pineapple</item>
+        <item>Fresh Cucumber</item>
+        <item>Fresh Mango Lemonade</item>
         <item>Black coffee</item>
         <item>Cappuccino</item>
         <item>Cold coffee</item>
@@ -67,23 +92,35 @@
         <item>tea</item>
     </string-array>
     <string-array name="drinks_prices">
-        <item>100 Rs</item>
-        <item>120 Rs</item>
-        <item>140 Rs</item>
-        <item>200 Rs</item>
-        <item>90 Rs</item>
-        <item>90 Rs</item>
-        <item>90 Rs</item>
-        <item>80 Rs</item>
+        <item>280Rs</item>
+        <item>280Rs</item>
+        <item>250Rs</item>
+        <item>250Rs</item>
+        <item>250Rs</item>
+        <item>250Rs</item>
+        <item>100Rs</item>
+        <item>120Rs</item>
+        <item>140Rs</item>
+        <item>200Rs</item>
+        <item>90Rs</item>
+        <item>90Rs</item>
+        <item>90Rs</item>
+        <item>80Rs</item>
     </string-array>
     <string-array name="sandwitch_menu">
+        <item>Mutton Kathi Roll</item>
+        <item>Paneer Tikka Kathi Roll</item>
         <item>BBQ chicken ranch wrap</item>
+        <item>Grilled Steak sandwich</item>
         <item>Classic Club sandwich</item>
         <item>Grilled chicken sandwich</item>
     </string-array>
     <string-array name="sandwitch_prices">
-        <item>300 Rs</item>
-        <item>4000 Rs</item>
-        <item>500 Rs</item>
+        <item>300Rs</item>
+        <item>300Rs</item>
+        <item>270Rs</item>
+        <item>550Rs</item>
+        <item>400Rs</item>
+        <item>500Rs</item>
     </string-array>
 </resources>
